@@ -5,7 +5,7 @@
 <style>
 :root{
   --stone-100:#E3E1D8; --stone-400:#918A82; --ink:#53514A;
-  --blue:#3F6D85; --green:#7FAD41;
+  --blue:#3F6D85; --green:#7FAD41; --green-deep:#6F9A38;
   --paper:#FCFBF8; --rule:#B9B5A9; --hair:#E2E0D7;
   --sans:"Avenir Next","Avenir","Nunito Sans",system-ui,sans-serif;
   --serif:"Didot","Didot LT STD","Bodoni Moda",Georgia,serif;
@@ -33,39 +33,40 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
 .mast .tag{font-size:6.2pt;letter-spacing:.26em;text-transform:uppercase;color:var(--stone-400);font-weight:600}
 
 /* ── headline (tightened) ── */
-.hero{padding:9pt 0 0}
-.hero h1{font-size:27pt;font-weight:200;color:var(--ink);letter-spacing:-.02em;line-height:.97}
+.hero{padding:5pt 0 0}
+.hero h1{font-size:24pt;font-weight:200;color:var(--ink);letter-spacing:-.02em;line-height:.97}
 .hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--blue);letter-spacing:-.005em}
-.hero .sub{font-size:8.2pt;font-weight:400;color:var(--stone-400);margin-top:8pt;max-width:4.1in;line-height:1.42}
-.who{display:grid;grid-template-columns:1.5fr 1fr 1.3fr;gap:20pt;margin-top:12pt}
-.who .lab{display:block;margin-bottom:9pt}
-.who .slot{border-bottom:.75pt solid var(--rule);height:13pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
+.hero .sub{font-size:8pt;font-weight:400;color:var(--stone-400);margin-top:7pt;max-width:4.9in;line-height:1.4}
+.who{display:grid;grid-template-columns:1.5fr 1fr 1.3fr;gap:20pt;margin-top:9pt}
+.who .lab{display:block;margin-bottom:7pt}
+.who .slot{border-bottom:.75pt solid var(--rule);height:12pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
 
 /* ── foundation: concept 01 blue band ── */
-.found{background:var(--blue);color:var(--paper);margin:12pt -.6in 0;padding:12pt .6in 13pt}
+.found{background:var(--blue);color:var(--paper);margin:10pt -.6in 0;padding:10pt .6in 11pt}
 .found .lab{color:rgba(252,251,248,.66)}
-.found h2{font-size:13pt;font-weight:200;letter-spacing:-.012em;margin:4pt 0 9pt}
+.found h2{font-size:12pt;font-weight:200;letter-spacing:-.012em;margin:3pt 0 7pt}
 .found h2 em{font-family:var(--serif);font-style:italic;font-weight:400}
 .f-grid{display:grid;grid-template-columns:1fr 1fr;gap:22pt}
 .f-item{display:grid;grid-template-columns:16pt 1fr;align-items:start}
 .disc{display:block;width:8.5pt;height:8.5pt;border-radius:50%;background:var(--green);margin-top:2pt}
 .f-item h3{font-size:9.5pt;font-weight:600}
-.f-item p{font-size:7.2pt;font-weight:400;color:rgba(252,251,248,.8);margin-top:2.5pt;line-height:1.38}
-.found-note{font-size:7.2pt;font-weight:400;color:rgba(252,251,248,.86);margin:10pt 0 0 16pt;
-  border-top:.5pt solid rgba(252,251,248,.28);padding-top:8pt}
+.f-item p{font-size:7pt;font-weight:400;color:rgba(252,251,248,.8);margin-top:2pt;line-height:1.32}
+.found-note{font-size:7pt;font-weight:400;color:rgba(252,251,248,.86);margin:7pt 0 0 16pt;
+  border-top:.5pt solid rgba(252,251,248,.28);padding-top:6pt}
 
 /* ── spine + pathways ── */
-.px{display:grid;grid-template-columns:34pt 1fr;flex:1}
+.px{display:grid;grid-template-columns:34pt 1fr;grid-template-rows:1fr;flex:1;min-height:0}
+.px-body{display:flex;flex-direction:column;min-height:0}
 .spine{position:relative}
 .spine::before{content:"";position:absolute;left:50%;top:-4pt;bottom:0;width:1pt;
   background:var(--blue);transform:translateX(-50%)}
-.px-head{padding:11pt 0 5pt;border-bottom:1pt solid var(--ink);display:flex;justify-content:space-between;align-items:baseline}
+.px-head{padding:9pt 0 4pt;border-bottom:1pt solid var(--ink);display:flex;justify-content:space-between;align-items:baseline}
 .px-head h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--ink)}
 .px-head p{font-size:6.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--stone-400);font-weight:500}
 .px-cols{display:grid;grid-template-columns:1fr 138pt 92pt;gap:16pt;padding:4pt 0;border-bottom:.5pt solid var(--hair)}
 .px-cols .lab{color:#8E8A81}
 .rows{display:flex;flex-direction:column}
-.row{display:grid;grid-template-columns:1fr 138pt 92pt;gap:16pt;padding:5pt 0 4pt;
+.row{display:grid;grid-template-columns:1fr 138pt 92pt;gap:16pt;padding:4pt 0 3.5pt;
   border-bottom:.5pt solid var(--hair);align-items:end;position:relative}
 .row h3{font-size:10pt;font-weight:600;color:var(--ink);letter-spacing:-.008em;padding-bottom:2.5pt}
 .row .slot{border-bottom:.5pt solid var(--rule);height:15pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
@@ -73,23 +74,29 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
 .node i{display:block;width:9pt;height:9pt;border-radius:50%;border:1pt solid #C3BFB4;background:var(--paper)}
 .node.on i{background:var(--green);border-color:var(--green);box-shadow:0 0 0 3pt var(--paper)}
 
+/* ── practitioner notes ── */
+.notes{flex:1;display:flex;flex-direction:column;min-height:0;padding-top:9pt}
+.notes .lab{display:block;margin-bottom:6pt}
+.notes .lines{flex:1;display:flex;flex-direction:column;min-height:0}
+.notes .lines i{flex:1;min-height:14pt;border-bottom:.5pt solid var(--rule);display:block}
+
 /* ── reassessment band: concept 03, spine lands in it ── */
-.band{background:var(--green);color:var(--paper);margin:14pt -.6in 0;padding:12pt .6in 13pt;
+.band{background:var(--green-deep);color:var(--paper);margin:10pt -.6in 0;padding:10pt .6in 11pt;
   display:flex;justify-content:space-between;align-items:center;position:relative}
 .band::before{content:"";position:absolute;left:calc(.6in + 17pt);top:-4pt;width:9pt;height:9pt;
-  border-radius:50%;background:var(--paper);transform:translateX(-50%);box-shadow:0 0 0 3.5pt var(--green)}
+  border-radius:50%;background:var(--paper);transform:translateX(-50%);box-shadow:0 0 0 3.5pt var(--green-deep)}
 .band .lab{color:rgba(252,251,248,.8)}
 .band h3{font-size:9.5pt;font-weight:600;letter-spacing:.02em;margin-top:3pt}
 .band .date{font-size:18pt;font-weight:400;letter-spacing:.1em;line-height:1;color:rgba(252,251,248,.95)}
 .band .date .ink{font-size:18pt;color:var(--paper)}
 
 /* ── close ── */
-.close{padding-top:12pt}
-.creed{font-family:var(--serif);font-size:11pt;font-style:italic;color:var(--blue);line-height:1.35;max-width:4.4in}
-.sign{display:grid;grid-template-columns:1.35fr 1fr;gap:22pt;margin-top:12pt;align-items:end}
-.sign .lab{display:block;margin-bottom:9pt}
-.sign .slot{border-bottom:.75pt solid var(--rule);height:13pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
-.foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:11pt;border-top:.5pt solid var(--hair);padding-top:6pt}
+.close{padding-top:9pt}
+.creed{font-family:var(--serif);font-size:10.5pt;font-style:italic;color:var(--blue);line-height:1.35;max-width:4.4in}
+.sign{display:grid;grid-template-columns:1.35fr 1fr;gap:22pt;margin-top:9pt;align-items:end}
+.sign .lab{display:block;margin-bottom:7pt}
+.sign .slot{border-bottom:.75pt solid var(--rule);height:12pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
+.foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:9pt;border-top:.5pt solid var(--hair);padding-top:5pt}
 .foot p{font-size:6.4pt;color:var(--stone-400);font-weight:400}
 .foot span{font-size:6pt;letter-spacing:.18em;text-transform:uppercase;color:#BDB9AD;font-weight:600}
 @media print{body{background:none;padding:0}.cap{display:none}.sheet{box-shadow:none;page-break-after:always}}
@@ -120,7 +127,7 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
   </div>
   <div class="px">
     <div class="spine"></div>
-    <div>
+    <div class="px-body">
       <div class="px-head"><h2>Pathways</h2><p>Marked pathways draw from the foundation</p></div>
       <div class="px-cols"><span></span><span class="lab">Specific item / formulation</span><span class="lab">Frequency</span></div>
       <div class="rows"><div class="row"><span class="node"><i></i></span>
@@ -131,6 +138,8 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
         <h3>Vitamin Injections</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
         <h3>Salt Room</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
         <h3>Regenerative Medicine</h3><div class="slot"></div><div class="slot"></div></div></div>
+      <div class="notes"><span class="lab">Notes</span>
+        <div class="lines"><i></i><i></i><i></i><i></i></div></div>
     </div>
   </div>
   <div class="band">
@@ -170,7 +179,7 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
   </div>
   <div class="px">
     <div class="spine"></div>
-    <div>
+    <div class="px-body">
       <div class="px-head"><h2>Pathways</h2><p>Marked pathways draw from the foundation</p></div>
       <div class="px-cols"><span></span><span class="lab">Specific item / formulation</span><span class="lab">Frequency</span></div>
       <div class="rows"><div class="row"><span class="node on"><i></i></span>
@@ -181,6 +190,8 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
         <h3>Vitamin Injections</h3><div class="slot"><span class="ink">B12 / MIC</span></div><div class="slot"><span class="ink">weekly</span></div></div><div class="row"><span class="node"><i></i></span>
         <h3>Salt Room</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
         <h3>Regenerative Medicine</h3><div class="slot"></div><div class="slot"></div></div></div>
+      <div class="notes"><span class="lab">Notes</span>
+        <div class="lines"><i></i><i></i><i></i><i></i></div></div>
     </div>
   </div>
   <div class="band">
