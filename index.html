@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>Well Infused - Functional Fusion Pad Concepts</title>
 <meta name="description" content="Three prescription pad concepts for the Well Infused Functional Fusion Protocol.">
 </head>
@@ -11,7 +12,7 @@
 <style>
 :root{
   --bg:#F4F2EC; --fg:#53514A; --muted:#6E6960; --line:#D6D3C9; --panel:#EAE7DE; --accent:#3F6D85;
-  --stone-100:#E3E1D8; --stone-400:#918A82; --ink:#53514A; --blue:#3F6D85; --green:#7FAD41;
+  --stone-100:#E3E1D8; --stone-400:#918A82; --ink:#53514A; --blue:#3F6D85; --green:#7FAD41; --green-deep:#6F9A38;--green-tint:#E7EEDA;--green-ink:#5F8730;
   --paper:#FCFBF8; --slot:#EDEBE2; --rule:#B9B5A9; --hair:#E2E0D7;
   --sans:"Avenir Next","Avenir","Nunito Sans",system-ui,sans-serif;
   --serif:"Didot","Didot LT STD","Bodoni Moda",Georgia,serif;
@@ -217,6 +218,8 @@
 .k4 .spine{position:relative}
 .k4 .spine::before{content:"";position:absolute;left:50%;top:-4pt;bottom:0;width:1pt;
   background:var(--blue);transform:translateX(-50%)}
+.k4 .spine::after{content:"";position:absolute;left:50%;bottom:-4pt;width:9pt;height:9pt;border-radius:50%;
+  background:var(--blue);transform:translateX(-50%);box-shadow:0 0 0 3pt var(--paper)}
 .k4 .px-head{padding:9pt 0 4pt;border-bottom:1pt solid var(--ink);display:flex;justify-content:space-between;align-items:baseline}
 .k4 .px-head h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--ink)}
 .k4 .px-head p{font-size:6.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--stone-400);font-weight:500}
@@ -234,17 +237,13 @@
 .k4 .notes .lab{display:block;margin-bottom:6pt}
 .k4 .notes .lines{flex:1;display:flex;flex-direction:column;min-height:0}
 .k4 .notes .lines i{flex:1;min-height:14pt;border-bottom:.5pt solid var(--rule);display:block}
-.k4 .band{background:var(--green-deep);color:var(--paper);margin:10pt -.6in 0;padding:10pt .6in 11pt;
-  display:flex;justify-content:space-between;align-items:center;position:relative}
-.k4 .band::before{content:"";position:absolute;left:calc(.6in + 17pt);top:-4pt;width:9pt;height:9pt;
-  border-radius:50%;background:var(--paper);transform:translateX(-50%);box-shadow:0 0 0 3.5pt var(--green-deep)}
-.k4 .band .lab{color:rgba(252,251,248,.8)}
-.k4 .band h3{font-size:9.5pt;font-weight:600;letter-spacing:.02em;margin-top:3pt}
-.k4 .band .date{font-size:18pt;font-weight:400;letter-spacing:.1em;line-height:1;color:rgba(252,251,248,.95)}
-.k4 .band .date .ink{font-size:18pt;color:var(--paper)}
 .k4 .close{padding-top:9pt}
 .k4 .creed{font-family:var(--serif);font-size:10.5pt;font-style:italic;color:var(--blue);line-height:1.35;max-width:4.4in}
-.k4 .sign{display:grid;grid-template-columns:1.35fr 1fr;gap:22pt;margin-top:9pt;align-items:end}
+.k4 .sign{display:grid;grid-template-columns:1fr 1.05fr;gap:20pt;margin-top:11pt;align-items:end}
+.k4 .reassess{background:var(--green-tint);padding:9pt 12pt 10pt}
+.k4 .reassess .lab{color:var(--green-ink);margin-bottom:5pt}
+.k4 .reassess .big{font-size:15pt;font-weight:400;color:var(--blue);letter-spacing:.08em;line-height:1}
+.k4 .reassess .big .ink{font-size:14pt}
 .k4 .sign .lab{display:block;margin-bottom:7pt}
 .k4 .sign .slot{border-bottom:.75pt solid var(--rule);height:12pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
 .k4 .foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:9pt;border-top:.5pt solid var(--hair);padding-top:5pt}
@@ -590,8 +589,8 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-
   </div>
 </section><section class="concept">
   <header class="ch"><div class="ch-n">04</div>
-    <div><h2>The Spine, Clinical</h2><p class="ch-tag">Concept 02's structure in concept 01's clinical colour.</p></div></header>
-  <div class="ch-body"><p>The spine layout, but the Foundation is the full-bleed blue band from concept 01 with its two green dots printed already filled, and the reassessment bar from concept 03 runs across the bottom. The spine now has somewhere to land: it descends from the Foundation, threads through the pathway nodes, and terminates in a white node punched into the green bar. A Notes block sits under the last pathway for anything the visit turned up that no field covers. Structure, clinical weight, open space and a return date on one page.</p><ul class="ch-notes"><li>Reads as clinical rather than editorial, while keeping the shape of the model visible.</li><li>The return date is now a full-width commitment instead of a small field.</li><li>Ruled Notes area for anything the printed fields do not cover.</li><li>Green does double duty here: it marks prescribed pathways and carries the return bar.</li><li>Tightest of the four vertically. Least slack if content gets added later.</li></ul></div>
+    <div><h2>The Spine, Clinical</h2><p class="ch-tag">Concept 02's structure, concept 01's colour, with room to write.</p></div></header>
+  <div class="ch-body"><p>The spine layout in concept 01's clinical colour: the Foundation is the full-bleed blue band with its two green dots printed already filled. The spine descends from it, threads the pathway nodes, and closes on a solid node of its own. Beneath that, a ruled <b>Notes</b> block takes whatever height is left over for anything the visit turned up that no printed field covers, and the return date sits in a boxed panel washed with a light tint of the brand green rather than a full-width bar.</p><ul class="ch-notes"><li>Reads as clinical rather than editorial, while keeping the shape of the model visible.</li><li>Ruled Notes area for anything the printed fields do not cover.</li><li>Return date is boxed rather than banded, which reads quieter and more like a chart document.</li><li>Tightest of the four vertically. Least slack if content gets added later.</li></ul></div>
   <div class="pair k4">
     <figure><figcaption>As printed</figcaption><div class="shot"><div class="sheet"><div class="pad">
   <div class="mast">
@@ -631,15 +630,12 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-
         <div class="lines"><i></i><i></i><i></i><i></i></div></div>
     </div>
   </div>
-  <div class="band">
-    <div><span class="lab">This protocol has an end date</span><h3>Return for reassessment</h3></div>
-    <div class="date">___ · ___ · ___</div>
-  </div>
   <div class="close">
     <div class="creed">Symptom resolution is a byproduct of restored function, not the goal.</div>
     <div class="sign">
-      <div><span class="lab">Prescribing NP signature</span><div class="slot"></div></div>
-      <div><span class="lab">Date</span><div class="slot"></div></div>
+      <div><span class="lab">Prescribing NP</span><div class="slot"></div></div>
+      <div class="reassess"><span class="lab">Return for reassessment</span>
+        <div class="big">____ · ____ · ____</div></div>
     </div>
     <div class="foot"><p>Pathways left unmarked are not part of this protocol.</p><span>Well Infused</span></div>
   </div>
@@ -682,15 +678,12 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-
         <div class="lines"><i></i><i></i><i></i><i></i></div></div>
     </div>
   </div>
-  <div class="band">
-    <div><span class="lab">This protocol has an end date</span><h3>Return for reassessment</h3></div>
-    <div class="date"><span class="ink">04 · 12 · 26</span></div>
-  </div>
   <div class="close">
     <div class="creed">Symptom resolution is a byproduct of restored function, not the goal.</div>
     <div class="sign">
-      <div><span class="lab">Prescribing NP signature</span><div class="slot"></div></div>
-      <div><span class="lab">Date</span><div class="slot"><span class="ink">21 · 08 · 26</span></div></div>
+      <div><span class="lab">Prescribing NP</span><div class="slot"></div></div>
+      <div class="reassess"><span class="lab">Return for reassessment</span>
+        <div class="big"><span class="ink">04 · 12 · 26</span></div></div>
     </div>
     <div class="foot"><p>Pathways left unmarked are not part of this protocol.</p><span>Well Infused</span></div>
   </div>

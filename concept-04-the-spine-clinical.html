@@ -5,7 +5,7 @@
 <style>
 :root{
   --stone-100:#E3E1D8; --stone-400:#918A82; --ink:#53514A;
-  --blue:#3F6D85; --green:#7FAD41; --green-deep:#6F9A38;
+  --blue:#3F6D85; --green:#7FAD41; --green-deep:#6F9A38; --green-tint:#E7EEDA; --green-ink:#5F8730;
   --paper:#FCFBF8; --rule:#B9B5A9; --hair:#E2E0D7;
   --sans:"Avenir Next","Avenir","Nunito Sans",system-ui,sans-serif;
   --serif:"Didot","Didot LT STD","Bodoni Moda",Georgia,serif;
@@ -60,6 +60,8 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
 .spine{position:relative}
 .spine::before{content:"";position:absolute;left:50%;top:-4pt;bottom:0;width:1pt;
   background:var(--blue);transform:translateX(-50%)}
+.spine::after{content:"";position:absolute;left:50%;bottom:-4pt;width:9pt;height:9pt;border-radius:50%;
+  background:var(--blue);transform:translateX(-50%);box-shadow:0 0 0 3pt var(--paper)}
 .px-head{padding:9pt 0 4pt;border-bottom:1pt solid var(--ink);display:flex;justify-content:space-between;align-items:baseline}
 .px-head h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--ink)}
 .px-head p{font-size:6.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--stone-400);font-weight:500}
@@ -80,20 +82,14 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
 .notes .lines{flex:1;display:flex;flex-direction:column;min-height:0}
 .notes .lines i{flex:1;min-height:14pt;border-bottom:.5pt solid var(--rule);display:block}
 
-/* ── reassessment band: concept 03, spine lands in it ── */
-.band{background:var(--green-deep);color:var(--paper);margin:10pt -.6in 0;padding:10pt .6in 11pt;
-  display:flex;justify-content:space-between;align-items:center;position:relative}
-.band::before{content:"";position:absolute;left:calc(.6in + 17pt);top:-4pt;width:9pt;height:9pt;
-  border-radius:50%;background:var(--paper);transform:translateX(-50%);box-shadow:0 0 0 3.5pt var(--green-deep)}
-.band .lab{color:rgba(252,251,248,.8)}
-.band h3{font-size:9.5pt;font-weight:600;letter-spacing:.02em;margin-top:3pt}
-.band .date{font-size:18pt;font-weight:400;letter-spacing:.1em;line-height:1;color:rgba(252,251,248,.95)}
-.band .date .ink{font-size:18pt;color:var(--paper)}
-
 /* ── close ── */
 .close{padding-top:9pt}
 .creed{font-family:var(--serif);font-size:10.5pt;font-style:italic;color:var(--blue);line-height:1.35;max-width:4.4in}
-.sign{display:grid;grid-template-columns:1.35fr 1fr;gap:22pt;margin-top:9pt;align-items:end}
+.sign{display:grid;grid-template-columns:1fr 1.05fr;gap:20pt;margin-top:11pt;align-items:end}
+.reassess{background:var(--green-tint);padding:9pt 12pt 10pt}
+.reassess .lab{color:var(--green-ink);margin-bottom:5pt}
+.reassess .big{font-size:15pt;font-weight:400;color:var(--blue);letter-spacing:.08em;line-height:1}
+.reassess .big .ink{font-size:14pt}
 .sign .lab{display:block;margin-bottom:7pt}
 .sign .slot{border-bottom:.75pt solid var(--rule);height:12pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
 .foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:9pt;border-top:.5pt solid var(--hair);padding-top:5pt}
@@ -142,15 +138,12 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
         <div class="lines"><i></i><i></i><i></i><i></i></div></div>
     </div>
   </div>
-  <div class="band">
-    <div><span class="lab">This protocol has an end date</span><h3>Return for reassessment</h3></div>
-    <div class="date">___ · ___ · ___</div>
-  </div>
   <div class="close">
     <div class="creed">Symptom resolution is a byproduct of restored function, not the goal.</div>
     <div class="sign">
-      <div><span class="lab">Prescribing NP signature</span><div class="slot"></div></div>
-      <div><span class="lab">Date</span><div class="slot"></div></div>
+      <div><span class="lab">Prescribing NP</span><div class="slot"></div></div>
+      <div class="reassess"><span class="lab">Return for reassessment</span>
+        <div class="big">____ · ____ · ____</div></div>
     </div>
     <div class="foot"><p>Pathways left unmarked are not part of this protocol.</p><span>Well Infused</span></div>
   </div>
@@ -194,15 +187,12 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
         <div class="lines"><i></i><i></i><i></i><i></i></div></div>
     </div>
   </div>
-  <div class="band">
-    <div><span class="lab">This protocol has an end date</span><h3>Return for reassessment</h3></div>
-    <div class="date"><span class="ink">04 · 12 · 26</span></div>
-  </div>
   <div class="close">
     <div class="creed">Symptom resolution is a byproduct of restored function, not the goal.</div>
     <div class="sign">
-      <div><span class="lab">Prescribing NP signature</span><div class="slot"></div></div>
-      <div><span class="lab">Date</span><div class="slot"><span class="ink">21 · 08 · 26</span></div></div>
+      <div><span class="lab">Prescribing NP</span><div class="slot"></div></div>
+      <div class="reassess"><span class="lab">Return for reassessment</span>
+        <div class="big"><span class="ink">04 · 12 · 26</span></div></div>
     </div>
     <div class="foot"><p>Pathways left unmarked are not part of this protocol.</p><span>Well Infused</span></div>
   </div>
