@@ -4,319 +4,309 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Well Infused - Functional Fusion Pad Concepts</title>
-<meta name="description" content="Three prescription pad concepts for the Well Infused Functional Fusion Protocol.">
-</head>
-<body>
+<title>Well Infused - Functional Fusion Protocol</title>
+<meta name="description" content="The selected prescription pad, in two options, plus the four-page clinical formulary.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400&family=Nunito+Sans:wght@200;300;400;600;700&family=Caveat:wght@500&display=swap">
 <style>
 :root{
   --bg:#F4F2EC; --fg:#53514A; --muted:#6E6960; --line:#D6D3C9; --panel:#EAE7DE; --accent:#3F6D85;
-  --stone-100:#E3E1D8; --stone-400:#918A82; --ink:#53514A; --blue:#3F6D85; --green:#7FAD41; --green-deep:#6F9A38;--green-tint:#E7EEDA;--green-ink:#5F8730;
-  --paper:#FCFBF8; --slot:#EDEBE2; --rule:#B9B5A9; --hair:#E2E0D7;
+  --stone-100:#E3E1D8; --stone-400:#918A82; --ink:#53514A; --blue:#3F6D85; --green:#7FAD41;
+  --green-tint:#E7EEDA; --green-ink:#5F8730;
+  --paper:#FCFBF8; --rule:#B9B5A9; --hair:#E2E0D7;
   --sans:"Avenir Next","Avenir","Nunito Sans",system-ui,sans-serif;
   --serif:"Didot","Didot LT STD","Bodoni Moda",Georgia,serif;
   --hand:"Bradley Hand","Caveat","Segoe Print",cursive;
 }
 @media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--bg:#2B2A27;--fg:#E4E1D8;--muted:#ABA69B;--line:#4A4844;--panel:#343230;--accent:#8FBBD2}
+  :root:not([data-theme="light"]){--bg:#2B2A27;--fg:#E4E1D8;--muted:#ABA69B;--line:#4A4844;
+    --panel:#343230;--accent:#8FBBD2}
 }
-:root[data-theme="dark"]{--bg:#2B2A27;--fg:#E4E1D8;--muted:#ABA69B;--line:#4A4844;--panel:#343230;--accent:#8FBBD2}
-.k1 *,.k2 *,.k3 *,.k4 *{margin:0;padding:0;box-sizing:border-box}
-.k1 .sheet{width:8.5in;height:11in;background:var(--paper);color:var(--ink);
+:root[data-theme="dark"]{--bg:#2B2A27;--fg:#E4E1D8;--muted:#ABA69B;--line:#4A4844;
+  --panel:#343230;--accent:#8FBBD2}
+.pa *,.pb *,.pf *{margin:0;padding:0;box-sizing:border-box}
+.pa .sheet{width:8.5in;height:11in;background:var(--paper);color:var(--ink);
   display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 54px rgba(0,0,0,.36)}
-.k1 .pad{padding:.5in .55in .46in;display:flex;flex-direction:column;flex:1}
-.k1 .mast{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:10pt}
-.k1 .lockup{display:flex;align-items:flex-end;gap:8pt}
-.k1 .lockup svg{width:36pt;color:var(--green);display:block;margin-bottom:2pt}
-.k1 .wm{font-size:20pt;line-height:.84;letter-spacing:-.015em}
-.k1 .wm b{font-weight:700;color:#7E7C76}
-.k1 .wm span{font-weight:200;color:#96938C}
-.k1 .doc{text-align:right}
-.k1 .doc .eyebrow{font-size:6.5pt;letter-spacing:.3em;text-transform:uppercase;color:var(--stone-400);font-weight:600;margin-bottom:3pt}
-.k1 .doc h1{font-size:15pt;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);line-height:1}
-.k1 .mast-rule{height:1.5pt;background:var(--blue)}
-.k1 .lab{font-size:5.8pt;letter-spacing:.18em;text-transform:uppercase;color:#A5A198;font-weight:600}
-.k1 .ink{font-family:var(--hand);font-size:11.5pt;color:var(--blue);line-height:1;white-space:nowrap}
-.k1 .who{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.35fr;gap:15pt;padding:11pt 0 12pt}
-.k1 .who .lab{display:block;margin-bottom:11pt}
-.k1 .who .slot{border-bottom:.75pt solid var(--rule);height:14pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
-.k1 .found{background:var(--blue);color:var(--paper);margin:0 -.55in;padding:13pt .55in 14pt}
-.k1 .found-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10pt}
-.k1 .found-top h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
-.k1 .found-top p{font-size:6.5pt;letter-spacing:.16em;text-transform:uppercase;color:rgba(252,251,248,.7);font-weight:500}
-.k1 .f-item{display:grid;grid-template-columns:20pt 1fr;align-items:start;padding:6pt 0}
-.k1 .f-item + .f-item{border-top:.5pt solid rgba(252,251,248,.28)}
-.k1 .disc{display:block;width:9pt;height:9pt;border-radius:50%;background:var(--green);margin-top:2.5pt}
-.k1 .f-item h3{font-size:10.5pt;font-weight:600;letter-spacing:-.005em}
-.k1 .f-item p{font-size:7.6pt;font-weight:400;color:rgba(252,251,248,.82);margin-top:2pt;max-width:5.1in;line-height:1.35}
-.k1 .found-note{font-size:7.6pt;font-weight:400;color:rgba(252,251,248,.88);margin-top:9pt;margin-left:20pt;
+.pa .pad{padding:.5in .55in .46in;display:flex;flex-direction:column;flex:1}
+.pa .mast{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:10pt}
+.pa .lockup{display:flex;align-items:flex-end;gap:8pt}
+.pa .lockup svg{width:36pt;color:var(--green);display:block;margin-bottom:2pt}
+.pa .wm{font-size:20pt;line-height:.84;letter-spacing:-.015em}
+.pa .wm b{font-weight:700;color:#7E7C76}
+.pa .wm span{font-weight:200;color:#96938C}
+.pa .doc{text-align:right}
+.pa .doc .eyebrow{font-size:6.5pt;letter-spacing:.3em;text-transform:uppercase;color:var(--stone-400);font-weight:600;margin-bottom:3pt}
+.pa .doc h1{font-size:15pt;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);line-height:1}
+.pa .mast-rule{height:1.5pt;background:var(--blue)}
+.pa .lab{font-size:5.8pt;letter-spacing:.18em;text-transform:uppercase;color:#A5A198;font-weight:600}
+.pa .ink{font-family:var(--hand);font-size:11.5pt;color:var(--blue);line-height:1;white-space:nowrap}
+.pa .who{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.35fr;gap:15pt;padding:11pt 0 12pt}
+.pa .who .lab{display:block;margin-bottom:11pt}
+.pa .who .slot{border-bottom:.75pt solid var(--rule);height:14pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
+.pa .found{background:var(--blue);color:var(--paper);margin:0 -.55in;padding:13pt .55in 14pt}
+.pa .found-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10pt}
+.pa .found-top h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
+.pa .found-top p{font-size:6.5pt;letter-spacing:.16em;text-transform:uppercase;color:rgba(252,251,248,.7);font-weight:500}
+.pa .f-item{display:grid;grid-template-columns:20pt 1fr;align-items:start;padding:6pt 0}
+.pa .f-item + .f-item{border-top:.5pt solid rgba(252,251,248,.28)}
+.pa .disc{display:block;width:9pt;height:9pt;border-radius:50%;background:var(--green);margin-top:2.5pt}
+.pa .f-item h3{font-size:10.5pt;font-weight:600;letter-spacing:-.005em}
+.pa .f-item p{font-size:7.6pt;font-weight:400;color:rgba(252,251,248,.82);margin-top:2pt;max-width:5.1in;line-height:1.35}
+.pa .found-note{font-size:7.6pt;font-weight:400;color:rgba(252,251,248,.88);margin-top:9pt;margin-left:20pt;
   border-top:.5pt solid rgba(252,251,248,.28);padding-top:8pt}
-.k1 .px-head{display:flex;justify-content:space-between;align-items:baseline;padding:15pt 0 6pt}
-.k1 .px-head h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--ink)}
-.k1 .px-head p{font-size:6.5pt;letter-spacing:.16em;text-transform:uppercase;color:var(--stone-400);font-weight:500}
-.k1 .px-rule{height:1pt;background:var(--ink)}
-.k1 .px-cols{display:grid;grid-template-columns:54pt 1.05fr 1fr 78pt;gap:14pt;padding:5pt 0 6pt;border-bottom:.5pt solid var(--hair)}
-.k1 .px-cols .c{text-align:center}
-.k1 .px-cols .lab{color:#8E8A81}
-.k1 .row{display:grid;grid-template-columns:54pt 1.05fr 1fr 78pt;gap:14pt;padding:8pt 0 7pt;
+.pa .px-head{display:flex;justify-content:space-between;align-items:baseline;padding:15pt 0 6pt}
+.pa .px-head h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--ink)}
+.pa .px-head p{font-size:6.5pt;letter-spacing:.16em;text-transform:uppercase;color:var(--stone-400);font-weight:500}
+.pa .px-rule{height:1pt;background:var(--ink)}
+.pa .px-cols{display:grid;grid-template-columns:54pt 1.05fr 1fr 78pt;gap:14pt;padding:5pt 0 6pt;border-bottom:.5pt solid var(--hair)}
+.pa .px-cols .c{text-align:center}
+.pa .px-cols .lab{color:#8E8A81}
+.pa .row{display:grid;grid-template-columns:54pt 1.05fr 1fr 78pt;gap:14pt;padding:8pt 0 7pt;
   border-bottom:.5pt solid var(--hair);align-items:start}
-.k1 .ring{display:block;width:10pt;height:10pt;border-radius:50%;border:1pt solid var(--rule);background:var(--paper);margin:1.5pt auto 0}
-.k1 .ring.on{background:var(--green);border-color:var(--green)}
-.k1 .row h3{font-size:10pt;font-weight:600;letter-spacing:-.01em;color:var(--ink);line-height:1.15}
-.k1 .row .desc{font-size:7pt;font-weight:400;color:var(--stone-400);margin-top:2pt;line-height:1.3}
-.k1 .row .slot{border-bottom:.5pt solid var(--rule);height:16pt;display:flex;align-items:flex-end;padding-bottom:2.5pt;align-self:end}
-.k1 .close{margin-top:auto;padding-top:14pt}
-.k1 .creed{font-size:10pt;font-weight:200;color:var(--ink);line-height:1.4;max-width:4.1in}
-.k1 .creed b{font-weight:600}
-.k1 .sign{display:grid;grid-template-columns:1fr 1.05fr;gap:20pt;margin-top:13pt;align-items:end}
-.k1 .sign .lab{display:block;margin-bottom:11pt}
-.k1 .sign .slot{border-bottom:.75pt solid var(--rule);height:14pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
-.k1 .reassess{background:var(--stone-100);padding:9pt 12pt 10pt}
-.k1 .reassess .lab{color:#78736B;margin-bottom:5pt}
-.k1 .reassess .big{font-size:15pt;font-weight:400;color:var(--blue);letter-spacing:.08em;line-height:1}
-.k1 .reassess .big .ink{font-size:14pt}
-.k1 .foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:12pt;border-top:.5pt solid var(--hair);padding-top:6pt}
-.k1 .foot p{font-size:6.4pt;letter-spacing:.04em;color:var(--stone-400);font-weight:400}
-.k1 .foot .stamp{font-size:6pt;letter-spacing:.18em;text-transform:uppercase;color:#BDB9AD;font-weight:600}
-.k2 .sheet{width:8.5in;height:11in;background:var(--paper);color:var(--ink);
+.pa .ring{display:block;width:10pt;height:10pt;border-radius:50%;border:1pt solid var(--rule);background:var(--paper);margin:1.5pt auto 0}
+.pa .ring.on{background:var(--green);border-color:var(--green)}
+.pa .row h3{font-size:10pt;font-weight:600;letter-spacing:-.01em;color:var(--ink);line-height:1.15}
+.pa .row .desc{font-size:7pt;font-weight:400;color:var(--stone-400);margin-top:2pt;line-height:1.3}
+.pa .row .slot{border-bottom:.5pt solid var(--rule);height:16pt;display:flex;align-items:flex-end;padding-bottom:2.5pt;align-self:end}
+.pa .close{margin-top:auto;padding-top:14pt}
+.pa .creed{font-size:10pt;font-weight:200;color:var(--ink);line-height:1.4;max-width:4.1in}
+.pa .creed b{font-weight:600}
+.pa .sign{display:grid;grid-template-columns:1fr 1.05fr;gap:20pt;margin-top:13pt;align-items:end}
+.pa .sign .lab{display:block;margin-bottom:11pt}
+.pa .sign .slot{border-bottom:.75pt solid var(--rule);height:14pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
+.pa .reassess{background:var(--green-tint);padding:9pt 12pt 10pt}
+.pa .reassess .lab{color:var(--green-ink);margin-bottom:5pt}
+.pa .reassess .big{font-size:15pt;font-weight:400;color:var(--blue);letter-spacing:.08em;line-height:1}
+.pa .reassess .big .ink{font-size:14pt}
+.pa .foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:12pt;border-top:.5pt solid var(--hair);padding-top:6pt}
+.pa .foot p{font-size:6.4pt;letter-spacing:.04em;color:var(--stone-400);font-weight:400}
+.pa .foot .stamp{font-size:6pt;letter-spacing:.18em;text-transform:uppercase;color:#BDB9AD;font-weight:600}
+.pb .sheet{width:8.5in;height:11in;background:var(--paper);color:var(--ink);
   display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 54px rgba(0,0,0,.36)}
-.k2 .pad{padding:.55in .6in .5in;display:flex;flex-direction:column;flex:1}
-.k2 .lab{font-size:5.8pt;letter-spacing:.18em;text-transform:uppercase;color:#A5A198;font-weight:600}
-.k2 .ink{font-family:var(--hand);font-size:11.5pt;color:var(--blue);line-height:1;white-space:nowrap}
-.k2 .mast{display:flex;justify-content:space-between;align-items:center}
-.k2 .lockup{display:flex;align-items:flex-end;gap:7pt}
-.k2 .lockup svg{width:29pt;color:var(--green);display:block;margin-bottom:1.5pt}
-.k2 .wm{font-size:16pt;line-height:.84;letter-spacing:-.015em}
-.k2 .wm b{font-weight:700;color:#7E7C76}
-.k2 .wm span{font-weight:200;color:#96938C}
-.k2 .mast .tag{font-size:6.2pt;letter-spacing:.26em;text-transform:uppercase;color:var(--stone-400);font-weight:600}
-.k2 .hero{padding:17pt 0 0}
-.k2 .hero h1{font-size:33pt;font-weight:200;color:var(--ink);letter-spacing:-.022em;line-height:.98}
-.k2 .hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--blue);letter-spacing:-.005em}
-.k2 .hero .sub{font-size:8.6pt;font-weight:400;color:var(--stone-400);margin-top:10pt;max-width:4.15in;line-height:1.45}
-.k2 .who{display:grid;grid-template-columns:1.5fr 1fr 1.3fr;gap:20pt;margin-top:16pt;padding-bottom:2pt}
-.k2 .who .lab{display:block;margin-bottom:10pt}
-.k2 .who .slot{border-bottom:.75pt solid var(--rule);height:14pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
-.k2 .found{background:var(--stone-100);margin:16pt -.6in 0;padding:13pt .6in 17pt}
-.k2 .found .lab{color:#78736B}
-.k2 .found h2{font-size:14pt;font-weight:200;color:var(--ink);letter-spacing:-.012em;margin:5pt 0 9pt}
-.k2 .found h2 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--blue)}
-.k2 .f-grid{display:grid;grid-template-columns:1fr 1fr;gap:24pt}
-.k2 .f-item h3{font-size:10pt;font-weight:600;color:var(--ink)}
-.k2 .f-item p{font-size:7.4pt;font-weight:400;color:#7C766E;margin-top:2.5pt;line-height:1.4}
-.k2 .px{display:grid;grid-template-columns:34pt 1fr;flex:1;padding-top:0}
-.k2 .spine{position:relative}
-.k2 .spine::before{content:"";position:absolute;left:50%;top:-4pt;bottom:0;width:1pt;
-  background:var(--blue);transform:translateX(-50%)}
-.k2 .px-head{padding:12pt 0 6pt;border-bottom:1pt solid var(--ink);display:flex;justify-content:space-between;align-items:baseline}
-.k2 .px-head h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--ink)}
-.k2 .px-head p{font-size:6.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--stone-400);font-weight:500}
-.k2 .px-cols{display:grid;grid-template-columns:1fr 138pt 92pt;gap:16pt;padding:5pt 0 5pt;border-bottom:.5pt solid var(--hair)}
-.k2 .px-cols .lab{color:#8E8A81}
-.k2 .rows{display:flex;flex-direction:column}
-.k2 .row{display:grid;grid-template-columns:1fr 138pt 92pt;gap:16pt;padding:7pt 0 6pt;
-  border-bottom:.5pt solid var(--hair);align-items:end;position:relative}
-.k2 .row h3{font-size:10.5pt;font-weight:600;color:var(--ink);letter-spacing:-.008em;padding-bottom:2.5pt}
-.k2 .row .slot{border-bottom:.5pt solid var(--rule);height:15pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
-.k2 .node{position:absolute;left:-34pt;width:34pt;top:0;bottom:0;display:flex;align-items:center;justify-content:center}
-.k2 .node i{display:block;width:9pt;height:9pt;border-radius:50%;border:1pt solid #C3BFB4;background:var(--paper)}
-.k2 .node.on i{background:var(--green);border-color:var(--green);box-shadow:0 0 0 3pt var(--paper)}
-.k2 .close{display:grid;grid-template-columns:34pt 1fr;margin-top:auto;padding-top:0}
-.k2 .term{position:relative}
-.k2 .term::before{content:"";position:absolute;left:50%;top:0;height:16pt;width:1pt;background:var(--blue);transform:translateX(-50%)}
-.k2 .term::after{content:"";position:absolute;left:50%;top:16pt;width:9pt;height:9pt;border-radius:50%;
-  background:var(--blue);transform:translateX(-50%)}
-.k2 .close-in{padding-top:13pt}
-.k2 .creed{font-family:var(--serif);font-size:12pt;font-style:italic;color:var(--blue);line-height:1.35;max-width:4.4in}
-.k2 .sign{display:grid;grid-template-columns:1.25fr 1fr;gap:22pt;margin-top:14pt;align-items:end}
-.k2 .sign .lab{display:block;margin-bottom:10pt}
-.k2 .sign .slot{border-bottom:.75pt solid var(--rule);height:14pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
-.k2 .foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:13pt;border-top:.5pt solid var(--hair);padding-top:6pt}
-.k2 .foot p{font-size:6.4pt;color:var(--stone-400);font-weight:400}
-.k2 .foot span{font-size:6pt;letter-spacing:.18em;text-transform:uppercase;color:#BDB9AD;font-weight:600}
-.k3 .sheet{width:8.5in;height:11in;background:var(--paper);color:var(--ink);
+.pb .pad{padding:.5in .55in .46in;display:flex;flex-direction:column;flex:1}
+.pb .mast{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:10pt}
+.pb .lockup{display:flex;align-items:flex-end;gap:8pt}
+.pb .lockup svg{width:36pt;color:var(--green);display:block;margin-bottom:2pt}
+.pb .wm{font-size:20pt;line-height:.84;letter-spacing:-.015em}
+.pb .wm b{font-weight:700;color:#7E7C76}
+.pb .wm span{font-weight:200;color:#96938C}
+.pb .doc{text-align:right}
+.pb .doc .eyebrow{font-size:6.5pt;letter-spacing:.3em;text-transform:uppercase;color:var(--stone-400);font-weight:600;margin-bottom:3pt}
+.pb .doc h1{font-size:15pt;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);line-height:1}
+.pb .mast-rule{height:1.5pt;background:var(--blue)}
+.pb .lab{font-size:5.8pt;letter-spacing:.18em;text-transform:uppercase;color:#A5A198;font-weight:600}
+.pb .ink{font-family:var(--hand);font-size:11.5pt;color:var(--blue);line-height:1;white-space:nowrap}
+.pb .who{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.35fr;gap:15pt;padding:11pt 0 12pt}
+.pb .who .lab{display:block;margin-bottom:11pt}
+.pb .who .slot{border-bottom:.75pt solid var(--rule);height:14pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
+.pb .found{background:var(--blue);color:var(--paper);margin:0 -.55in;padding:13pt .55in 14pt}
+.pb .found-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10pt}
+.pb .found-top h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
+.pb .found-top p{font-size:6.5pt;letter-spacing:.16em;text-transform:uppercase;color:rgba(252,251,248,.7);font-weight:500}
+.pb .f-item{display:grid;grid-template-columns:20pt 1fr;align-items:start;padding:6pt 0}
+.pb .f-item + .f-item{border-top:.5pt solid rgba(252,251,248,.28)}
+.pb .disc{display:block;width:9pt;height:9pt;border-radius:50%;background:var(--green);margin-top:2.5pt}
+.pb .f-item h3{font-size:10.5pt;font-weight:600;letter-spacing:-.005em}
+.pb .f-item p{font-size:7.6pt;font-weight:400;color:rgba(252,251,248,.82);margin-top:2pt;max-width:5.1in;line-height:1.35}
+.pb .found-note{font-size:7.6pt;font-weight:400;color:rgba(252,251,248,.88);margin-top:9pt;margin-left:20pt;
+  border-top:.5pt solid rgba(252,251,248,.28);padding-top:8pt}
+.pb .px-head{display:flex;justify-content:space-between;align-items:baseline;padding:15pt 0 6pt}
+.pb .px-head h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--ink)}
+.pb .px-head p{font-size:6.5pt;letter-spacing:.16em;text-transform:uppercase;color:var(--stone-400);font-weight:500}
+.pb .px-rule{height:1pt;background:var(--ink)}
+.pb .px-cols{display:grid;grid-template-columns:54pt 1.05fr 1fr 78pt;gap:14pt;padding:5pt 0 6pt;border-bottom:.5pt solid var(--hair)}
+.pb .px-cols .c{text-align:center}
+.pb .px-cols .lab{color:#8E8A81}
+.pb .row{display:grid;grid-template-columns:54pt 1.05fr 1fr 78pt;gap:14pt;padding:8pt 0 7pt;
+  border-bottom:.5pt solid var(--hair);align-items:start}
+.pb .ring{display:block;width:10pt;height:10pt;border-radius:50%;border:1pt solid var(--rule);background:var(--paper);margin:1.5pt auto 0}
+.pb .ring.on{background:var(--green);border-color:var(--green)}
+.pb .row h3{font-size:10pt;font-weight:600;letter-spacing:-.01em;color:var(--ink);line-height:1.15}
+.pb .row .desc{font-size:7pt;font-weight:400;color:var(--stone-400);margin-top:2pt;line-height:1.3}
+.pb .row .slot{border-bottom:.5pt solid var(--rule);height:16pt;display:flex;align-items:flex-end;padding-bottom:2.5pt;align-self:end}
+.pb .close{margin-top:auto;padding-top:14pt}
+.pb .creed{font-size:10pt;font-weight:200;color:var(--ink);line-height:1.4;max-width:4.1in}
+.pb .creed b{font-weight:600}
+.pb .sign{display:grid;grid-template-columns:1fr 1.05fr;gap:20pt;margin-top:13pt;align-items:end}
+.pb .sign .lab{display:block;margin-bottom:11pt}
+.pb .sign .slot{border-bottom:.75pt solid var(--rule);height:14pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
+.pb .reassess{background:var(--green-tint);padding:9pt 12pt 10pt}
+.pb .reassess .lab{color:var(--green-ink);margin-bottom:5pt}
+.pb .reassess .big{font-size:15pt;font-weight:400;color:var(--blue);letter-spacing:.08em;line-height:1}
+.pb .reassess .big .ink{font-size:14pt}
+.pb .foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:12pt;border-top:.5pt solid var(--hair);padding-top:6pt}
+.pb .foot p{font-size:6.4pt;letter-spacing:.04em;color:var(--stone-400);font-weight:400}
+.pb .foot .stamp{font-size:6pt;letter-spacing:.18em;text-transform:uppercase;color:#BDB9AD;font-weight:600}
+.pb .who{padding:9pt 0 10pt}
+.pb .found{padding:11pt .55in 12pt}
+.pb .f-item{padding:5pt 0}
+.pb .px-head{padding:12pt 0 5pt}
+.pb .row{padding:5.5pt 0 4.5pt}
+.pb .notes{padding-top:10pt}
+.pb .notes .lab{display:block;margin-bottom:7pt}
+.pb .notes .lines{display:flex;flex-direction:column}
+.pb .notes .lines i{display:block;height:24pt;border-bottom:.5pt solid var(--rule)}
+.pb .close{padding-top:11pt}
+.pb .sign{margin-top:10pt}
+.pb .foot{margin-top:10pt}
+.pf .sheet{width:8.5in;height:11in;background:var(--paper);color:var(--ink);
   display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 54px rgba(0,0,0,.36)}
-.k3 .pad{padding:.5in .55in .45in;display:flex;flex-direction:column;flex:1}
-.k3 .lab{font-size:6pt;letter-spacing:.2em;text-transform:uppercase;color:#A19D94;font-weight:600}
-.k3 .ink{font-family:var(--hand);font-size:13pt;color:var(--blue);line-height:1;white-space:nowrap}
-.k3 .mast{display:flex;justify-content:space-between;align-items:center;padding-bottom:9pt;border-bottom:1.5pt solid var(--ink)}
-.k3 .lockup{display:flex;align-items:flex-end;gap:7pt}
-.k3 .lockup svg{width:28pt;color:var(--green);display:block;margin-bottom:1.5pt}
-.k3 .wm{font-size:15.5pt;line-height:.84;letter-spacing:-.015em}
-.k3 .wm b{font-weight:700;color:#7E7C76}
-.k3 .wm span{font-weight:200;color:#96938C}
-.k3 .mast .tag{text-align:right;font-size:6.5pt;letter-spacing:.26em;text-transform:uppercase;color:var(--stone-400);font-weight:600;line-height:1.7}
-.k3 .who{display:grid;grid-template-columns:1.7fr 1fr 1.4fr;gap:22pt;padding:14pt 0 16pt}
-.k3 .who .lab{display:block;margin-bottom:12pt}
-.k3 .who .slot{border-bottom:.75pt solid var(--rule);height:17pt;display:flex;align-items:flex-end;padding-bottom:3pt}
-.k3 .found{background:var(--ink);color:var(--paper);margin:0 -.55in;padding:16pt .55in 17pt}
-.k3 .found .lab{color:rgba(252,251,248,.62)}
-.k3 .f-grid{display:grid;grid-template-columns:1fr 1fr;gap:26pt;margin-top:10pt}
-.k3 .f-item h3{font-size:13pt;font-weight:600;letter-spacing:-.012em;line-height:1.15}
-.k3 .f-item p{font-size:7.6pt;font-weight:400;color:rgba(252,251,248,.78);margin-top:4pt;line-height:1.4}
-.k3 .found-note{margin-top:13pt;padding-top:10pt;border-top:.5pt solid rgba(252,251,248,.3);
-  font-size:8.4pt;font-weight:300;color:rgba(252,251,248,.92)}
-.k3 .found-note b{font-weight:600;color:var(--green)}
-.k3 .px-head{display:flex;justify-content:space-between;align-items:baseline;padding:16pt 0 7pt}
-.k3 .px-head h2{font-size:8.5pt;letter-spacing:.26em;text-transform:uppercase;font-weight:600;color:var(--ink)}
-.k3 .px-head p{font-size:6.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--stone-400);font-weight:500}
-.k3 .px-cols{display:grid;grid-template-columns:1fr 168pt 96pt;gap:6pt;padding-bottom:4pt}
-.k3 .px-cols .lab{padding-left:8pt}
-.k3 .rows{display:flex;flex-direction:column;gap:5pt}
-.k3 .row{display:grid;grid-template-columns:1fr 168pt 96pt;gap:6pt;align-items:stretch}
-.k3 .row h3{font-size:13.5pt;font-weight:600;color:var(--stone-400);letter-spacing:-.012em;
-  display:flex;align-items:center;padding-right:12pt;line-height:1.1}
-.k3 .row .slot{background:var(--slot);display:flex;align-items:center;padding:0 9pt;min-height:27pt}
-.k3 .band{background:var(--green);color:var(--paper);margin:17pt -.55in 0;padding:13pt .55in 14pt;
-  display:flex;justify-content:space-between;align-items:center}
-.k3 .band .lab{color:rgba(252,251,248,.78)}
-.k3 .band h3{font-size:9.5pt;font-weight:600;letter-spacing:.02em;margin-top:3pt}
-.k3 .band .date{font-size:19pt;font-weight:400;letter-spacing:.1em;line-height:1;color:rgba(252,251,248,.95)}
-.k3 .band .date .ink{font-size:19pt;color:var(--paper)}
-.k3 .close{margin-top:auto;padding-top:15pt}
-.k3 .creed{font-size:10.5pt;font-weight:200;color:var(--ink);line-height:1.4;max-width:4.3in}
-.k3 .creed b{font-weight:600}
-.k3 .sign{display:grid;grid-template-columns:1.3fr 1fr;gap:24pt;margin-top:15pt;align-items:end}
-.k3 .sign .lab{display:block;margin-bottom:12pt}
-.k3 .sign .slot{border-bottom:.75pt solid var(--rule);height:16pt;display:flex;align-items:flex-end;padding-bottom:3pt}
-.k3 .foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:13pt;border-top:.5pt solid var(--hair);padding-top:6pt}
-.k3 .foot p{font-size:6.6pt;color:var(--stone-400);font-weight:400}
-.k3 .foot span{font-size:6pt;letter-spacing:.18em;text-transform:uppercase;color:#BDB9AD;font-weight:600}
-.k4 .sheet{width:8.5in;height:11in;background:var(--paper);color:var(--ink);
-  display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 54px rgba(0,0,0,.36)}
-.k4 .pad{padding:.5in .6in .45in;display:flex;flex-direction:column;flex:1}
-.k4 .lab{font-size:5.8pt;letter-spacing:.18em;text-transform:uppercase;color:#A5A198;font-weight:600}
-.k4 .ink{font-family:var(--hand);font-size:11.5pt;color:var(--blue);line-height:1;white-space:nowrap}
-.k4 .mast{display:flex;justify-content:space-between;align-items:center}
-.k4 .lockup{display:flex;align-items:flex-end;gap:7pt}
-.k4 .lockup svg{width:28pt;color:var(--green);display:block;margin-bottom:1.5pt}
-.k4 .wm{font-size:15.5pt;line-height:.84;letter-spacing:-.015em}
-.k4 .wm b{font-weight:700;color:#7E7C76}
-.k4 .wm span{font-weight:200;color:#96938C}
-.k4 .mast .tag{font-size:6.2pt;letter-spacing:.26em;text-transform:uppercase;color:var(--stone-400);font-weight:600}
-.k4 .hero{padding:7pt 0 0}
-.k4 .hero h1{font-size:21pt;font-weight:200;color:var(--ink);letter-spacing:-.02em;line-height:.97}
-.k4 .hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--blue);letter-spacing:-.005em}
-.k4 .hero .sub{font-size:7.8pt;font-weight:400;color:var(--stone-400);margin-top:6pt;max-width:5.2in;line-height:1.38}
-.k4 .who{display:grid;grid-template-columns:1.5fr 1fr 1.3fr;gap:20pt;margin-top:10pt}
-.k4 .who .lab{display:block;margin-bottom:10pt}
-.k4 .who .slot{border-bottom:.75pt solid var(--rule);height:14pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
-.k4 .found{background:var(--blue);color:var(--paper);margin:11pt -.6in 0;padding:11pt .6in 12pt}
-.k4 .found .lab{color:rgba(252,251,248,.66)}
-.k4 .found h2{font-size:12pt;font-weight:200;letter-spacing:-.012em;margin:3pt 0 7pt}
-.k4 .found h2 em{font-family:var(--serif);font-style:italic;font-weight:400}
-.k4 .f-grid{display:grid;grid-template-columns:1fr 1fr;gap:22pt}
-.k4 .f-item{display:grid;grid-template-columns:16pt 1fr;align-items:start}
-.k4 .disc{display:block;width:8.5pt;height:8.5pt;border-radius:50%;background:var(--green);margin-top:2pt}
-.k4 .f-item h3{font-size:9.5pt;font-weight:600}
-.k4 .f-item p{font-size:7.2pt;font-weight:400;color:rgba(252,251,248,.8);margin-top:2.5pt;line-height:1.38}
-.k4 .found-note{font-size:7.2pt;font-weight:400;color:rgba(252,251,248,.86);margin:7pt 0 0 16pt;
-  border-top:.5pt solid rgba(252,251,248,.28);padding-top:6pt}
-.k4 .px{display:grid;grid-template-columns:34pt 1fr;grid-template-rows:1fr;flex:1;min-height:0}
-.k4 .px-body{display:flex;flex-direction:column;min-height:0}
-.k4 .spine{position:relative}
-.k4 .spine::before{content:"";position:absolute;left:50%;top:-4pt;bottom:0;width:1pt;
-  background:var(--blue);transform:translateX(-50%)}
-.k4 .spine::after{content:"";position:absolute;left:50%;bottom:-4pt;width:9pt;height:9pt;border-radius:50%;
-  background:var(--blue);transform:translateX(-50%);box-shadow:0 0 0 3pt var(--paper)}
-.k4 .px-head{padding:10pt 0 4pt;border-bottom:1pt solid var(--ink);display:flex;justify-content:space-between;align-items:baseline}
-.k4 .px-head h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--ink)}
-.k4 .px-head p{font-size:6.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--stone-400);font-weight:500}
-.k4 .px-cols{display:grid;grid-template-columns:1fr 138pt 92pt;gap:16pt;padding:4pt 0;border-bottom:.5pt solid var(--hair)}
-.k4 .px-cols .lab{color:#8E8A81}
-.k4 .rows{flex:1;display:flex;flex-direction:column;min-height:0}
-.k4 .row{display:grid;grid-template-columns:1fr 138pt 92pt;gap:16pt;padding:5pt 0 5pt;flex:1;min-height:30pt;
-  border-bottom:.5pt solid var(--hair);align-items:end;position:relative}
-.k4 .row h3{font-size:10pt;font-weight:600;color:var(--ink);letter-spacing:-.008em;padding-bottom:2.5pt}
-.k4 .row .slot{border-bottom:.5pt solid var(--rule);height:15pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
-.k4 .node{position:absolute;left:-34pt;width:34pt;top:0;bottom:0;display:flex;align-items:center;justify-content:center}
-.k4 .node i{display:block;width:9pt;height:9pt;border-radius:50%;border:1pt solid #C3BFB4;background:var(--paper)}
-.k4 .node.on i{background:var(--green);border-color:var(--green);box-shadow:0 0 0 3pt var(--paper)}
-.k4 .notes{display:flex;flex-direction:column;padding-top:12pt}
-.k4 .notes .lab{display:block;margin-bottom:8pt}
-.k4 .notes .lines{display:flex;flex-direction:column}
-.k4 .notes .lines i{height:27pt;border-bottom:.5pt solid var(--rule);display:block}
-.k4 .close{padding-top:10pt}
-.k4 .creed{font-family:var(--serif);font-size:10.5pt;font-style:italic;color:var(--blue);line-height:1.35;max-width:4.4in}
-.k4 .sign{display:grid;grid-template-columns:1fr 1.05fr;gap:20pt;margin-top:11pt;align-items:end}
-.k4 .reassess{background:var(--green-tint);padding:9pt 12pt 10pt}
-.k4 .reassess .lab{color:var(--green-ink);margin-bottom:5pt}
-.k4 .reassess .big{font-size:15pt;font-weight:400;color:var(--blue);letter-spacing:.08em;line-height:1}
-.k4 .reassess .big .ink{font-size:14pt}
-.k4 .sign .lab{display:block;margin-bottom:10pt}
-.k4 .sign .slot{border-bottom:.75pt solid var(--rule);height:14pt;display:flex;align-items:flex-end;padding-bottom:2.5pt}
-.k4 .foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:10pt;border-top:.5pt solid var(--hair);padding-top:6pt}
-.k4 .foot p{font-size:6.4pt;color:var(--stone-400);font-weight:400}
-.k4 .foot span{font-size:6pt;letter-spacing:.18em;text-transform:uppercase;color:#BDB9AD;font-weight:600}
+.pf .pad{padding:.5in .55in .45in;display:flex;flex-direction:column;flex:1}
+.pf .lab{font-size:5.8pt;letter-spacing:.18em;text-transform:uppercase;color:#A5A198;font-weight:600}
+.pf .mast{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:9pt}
+.pf .lockup{display:flex;align-items:flex-end;gap:8pt}
+.pf .lockup svg{width:32pt;color:var(--green);display:block;margin-bottom:2pt}
+.pf .wm{font-size:18pt;line-height:.84;letter-spacing:-.015em}
+.pf .wm b{font-weight:700;color:#7E7C76}
+.pf .wm span{font-weight:200;color:#96938C}
+.pf .doc{text-align:right}
+.pf .doc .eyebrow{font-size:6.2pt;letter-spacing:.28em;text-transform:uppercase;color:var(--stone-400);font-weight:600;margin-bottom:3pt}
+.pf .doc h1{font-size:15pt;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--blue);line-height:1}
+.pf .mast-rule{height:1.5pt;background:var(--blue)}
+.pf .kick{display:flex;justify-content:space-between;align-items:baseline;padding:7pt 0 0}
+.pf .kick .pg{font-size:5.8pt;letter-spacing:.18em;text-transform:uppercase;color:#BDB9AD;font-weight:600}
+.pf .band{background:var(--blue);color:var(--paper);margin:11pt -.55in 0;padding:13pt .55in 14pt}
+.pf .band-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10pt}
+.pf .band-top h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
+.pf .band-top p{font-size:6.5pt;letter-spacing:.15em;text-transform:uppercase;color:rgba(252,251,248,.7);font-weight:500}
+.pf .fgrid{display:grid;grid-template-columns:1fr 1fr;gap:22pt}
+.pf .fitem{display:grid;grid-template-columns:17pt 1fr;align-items:start}
+.pf .disc{display:block;width:8.5pt;height:8.5pt;border-radius:50%;background:var(--green);margin-top:2pt}
+.pf .fitem h3{font-size:10pt;font-weight:600;letter-spacing:-.008em}
+.pf .fitem p{font-size:7.2pt;font-weight:400;color:rgba(252,251,248,.82);margin-top:2.5pt;line-height:1.38}
+.pf .sec{display:flex;justify-content:space-between;align-items:baseline;padding:13pt 0 5pt;
+  border-bottom:1pt solid var(--ink);margin-bottom:9pt}
+.pf .sech{font-size:9pt;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--ink)}
+.pf .sec .sub{font-size:6.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--stone-400);font-weight:500}
+.pf .rule{height:.5pt;background:var(--hair);margin-top:13pt}
+.pf .cats{column-count:2;column-gap:32pt}
+.pf .cats.two{column-count:3;column-gap:24pt}
+.pf .cat{break-inside:avoid;-webkit-column-break-inside:avoid;margin-bottom:13pt}
+.pf .cat h4{font-size:8.6pt;font-weight:600;color:var(--blue);letter-spacing:.02em;
+  padding-bottom:4pt;border-bottom:.5pt solid var(--hair);margin-bottom:5.5pt}
+.pf .cat ul{list-style:none}
+.pf .cat li{font-size:9pt;font-weight:400;color:var(--ink);line-height:1.72}
+.pf .nlist{display:flex;flex-direction:column}
+.pf .nrow{display:grid;grid-template-columns:1.02fr 1.55fr;gap:14pt;padding:4.6pt 0;
+  border-bottom:.5pt solid var(--hair);align-items:baseline}
+.pf .nrow .nm{font-size:8.8pt;font-weight:600;color:var(--ink);letter-spacing:-.005em}
+.pf .nrow .ds{font-size:7.8pt;font-weight:400;color:var(--stone-400);line-height:1.35}
+.pf .tint{background:var(--green-tint);padding:11pt 13pt 12pt;margin-top:13pt}
+.pf .tint .lab{color:var(--green-ink);display:block}
+.pf .tint .series{font-size:7.6pt;font-weight:600;color:var(--ink);margin:5pt 0 8pt;letter-spacing:.02em}
+.pf .tint .nrow{border-bottom:.5pt solid rgba(95,135,48,.22)}
+.pf .tint .nrow:last-child{border-bottom:none}
+.pf .tint .nrow .ds{color:#7C8A66}
+.pf .cols2{display:grid;grid-template-columns:1fr 1fr;gap:26pt;margin-top:2pt}
+.pf .cols2 .sec{padding-top:14pt}
+.pf .tbd{font-size:7.6pt;font-style:italic;color:#A9A49A;font-weight:400;
+  border-bottom:.5pt dashed #C6C1B5;padding:3pt 0;display:block}
+.pf .cat li.tbd{line-height:1.5;border-bottom:.5pt dashed #C6C1B5}
+.pf .nrow.tbd-row{border-bottom:.5pt dashed #C6C1B5}
+.pf .nrow.tbd-row .nm{font-style:italic;font-weight:400;color:#A9A49A}
+.pf .nrow.tbd-row .ds{font-style:italic;color:#B4AFA4}
+.pf .price{display:grid;grid-template-columns:1fr auto;gap:12pt;padding:3.2pt 0;
+  border-bottom:.5pt solid var(--hair);align-items:baseline}
+.pf .price .pn{font-size:8.8pt;font-weight:600;color:var(--ink)}
+.pf .price .pd{font-size:7.4pt;font-weight:400;color:var(--stone-400)}
+.pf .price .pv{font-size:9pt;font-weight:600;color:var(--blue);font-variant-numeric:tabular-nums}
+.pf .note{background:var(--stone-100);padding:8pt 12pt 9pt;margin-top:10pt}
+.pf .note .lab{display:block;margin-bottom:5pt;color:#78736B}
+.pf .note p{font-size:7.6pt;font-weight:400;color:#6E6960;line-height:1.45}
+.pf .write{margin-top:11pt;padding-top:9pt;border-top:.5pt solid var(--hair)}
+.pf .write .lab{display:block;margin-bottom:8pt}
+.pf .write .lines{display:flex;flex-direction:column}
+.pf .write .lines i{display:block;height:20pt;border-bottom:.5pt solid var(--rule)}
+.pf .foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:auto;
+  border-top:.5pt solid var(--hair);padding-top:6pt}
+.pf .foot p{font-size:6.4pt;color:var(--stone-400);font-weight:400}
+.pf .foot .stamp{font-size:6pt;letter-spacing:.18em;text-transform:uppercase;color:#BDB9AD;font-weight:600;white-space:nowrap}
+
 *{box-sizing:border-box}
+/* the sheets were authored against the browser default line-height, not the
+   page's 1.5, so pin it back or every text block grows and the sheet overflows */
+.pa .sheet,.pb .sheet,.pf .sheet{line-height:normal}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-height:1.5;
   -webkit-font-smoothing:antialiased}
 .wrap{max-width:1180px;margin:0 auto;padding:0 24px 96px}
-.intro{padding:72px 0 46px;border-bottom:2px solid var(--fg)}
+.intro{padding:70px 0 44px;border-bottom:2px solid var(--fg)}
 .eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:600}
-.intro h1{font-size:clamp(32px,5.6vw,58px);font-weight:200;letter-spacing:-.025em;line-height:1.02;
-  margin:18px 0 0;text-wrap:balance;max-width:15ch}
+.intro h1{font-size:clamp(30px,5.2vw,54px);font-weight:200;letter-spacing:-.025em;
+  line-height:1.02;margin:18px 0 0;text-wrap:balance;max-width:17ch}
 .intro h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent)}
-.lede{font-size:clamp(15px,1.6vw,17px);color:var(--muted);max-width:64ch;margin:22px 0 0}
+.lede{font-size:clamp(15px,1.6vw,17px);color:var(--muted);max-width:66ch;margin:20px 0 0}
 .lede b{font-weight:600;color:var(--fg)}
-.meta{display:flex;flex-wrap:wrap;gap:26px 34px;margin-top:30px}
-.meta div{min-width:140px}
+.meta{display:flex;flex-wrap:wrap;gap:24px 34px;margin-top:28px}
 .meta dt{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600}
-.meta dd{margin:6px 0 0;font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}
-.concept{padding:70px 0 0;border-bottom:1px solid var(--line)}
-.ch{display:flex;gap:20px;align-items:baseline}
-.ch-n{font-family:var(--serif);font-size:44px;line-height:.9;color:var(--muted);font-weight:400;
-  font-variant-numeric:tabular-nums}
-.ch h2{font-size:clamp(24px,3.2vw,34px);font-weight:600;letter-spacing:-.02em;margin:0}
-.ch-tag{margin:6px 0 0;font-size:clamp(15px,1.8vw,19px);font-weight:300;color:var(--accent)}
-.ch-body{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:44px;
-  margin:26px 0 38px;padding-left:64px}
-.ch-body p{margin:0;font-size:15px;color:var(--muted);max-width:62ch}
-.ch-body p b{font-weight:600;color:var(--fg)}
-.ch-notes{margin:0;padding:0;list-style:none;border-top:2px solid var(--fg)}
-.ch-notes li{font-size:13px;color:var(--muted);padding:9px 0;border-bottom:1px solid var(--line)}
-.pair{--s:.66;display:flex;gap:36px;padding:6px 0 42px;overflow-x:auto}
+.meta dd{margin:6px 0 0;font-size:14px;font-weight:600}
+.sec{padding:66px 0 0;border-bottom:1px solid var(--line)}
+.sec:last-of-type{border-bottom:none}
+.sh{display:flex;gap:18px;align-items:baseline;flex-wrap:wrap}
+.sh h2{font-size:clamp(23px,3.1vw,32px);font-weight:600;letter-spacing:-.02em;margin:0}
+.badge{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;
+  background:var(--green-tint);color:var(--green-ink);padding:5px 10px;border-radius:2px}
+.stag{margin:6px 0 0;font-size:clamp(15px,1.8vw,19px);font-weight:300;color:var(--accent);width:100%}
+.body{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px;margin:24px 0 34px}
+.body p{margin:0;font-size:15px;color:var(--muted);max-width:62ch}
+.body p b{font-weight:600;color:var(--fg)}
+.body .prose p + p{margin-top:12px}
+.notes{margin:0;padding:0;list-style:none;border-top:2px solid var(--fg)}
+.notes li{font-size:13px;color:var(--muted);padding:9px 0;border-bottom:1px solid var(--line)}
+.pair{--s:.66;display:flex;gap:32px;padding:6px 0 42px;overflow-x:auto}
 .pair figure{margin:0;flex:0 0 auto}
 .pair figcaption{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);
-  font-weight:600;margin-bottom:12px}
+  font-weight:600;margin-bottom:11px}
 .shot{width:calc(816px * var(--s));height:calc(1056px * var(--s));overflow:hidden}
 .pair .sheet{transform:scale(var(--s));transform-origin:top left;
   box-shadow:0 16px 44px rgba(0,0,0,.22);border:1px solid var(--line)}
-.flags{margin-top:70px;padding:34px;background:var(--panel);border-top:3px solid var(--accent)}
+.pf .pair{--s:.5}
+.flags{margin-top:66px;padding:32px;background:var(--panel);border-top:3px solid var(--accent)}
 .flags h3{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin:0 0 6px}
-.flags .sub{font-size:14px;color:var(--muted);margin:0 0 20px;max-width:64ch}
-.flags ul{margin:0;padding:0;list-style:none;display:grid;gap:16px}
+.flags .sub{font-size:14px;color:var(--muted);margin:0 0 18px;max-width:64ch}
+.flags ul{margin:0;padding:0;list-style:none;display:grid;gap:15px}
 .flags li{font-size:14px;color:var(--muted);max-width:78ch}
 .flags b{color:var(--fg);font-weight:600}
 @media (max-width:1180px){.pair{--s:.55}}
 @media (max-width:980px){.pair{--s:.45}}
 @media (max-width:880px){
-  .ch-body{grid-template-columns:1fr;gap:22px;padding-left:0}
-  .ch{gap:14px} .ch-n{font-size:32px}
-  .pair{--s:.62;flex-direction:column;gap:32px}
+  .body{grid-template-columns:1fr;gap:20px}
+  .pair{--s:.62;flex-direction:column;gap:30px}
 }
 @media (max-width:620px){.pair{--s:.48}}
 @media (max-width:460px){.pair{--s:.36}}
+
 </style>
+</head>
+<body>
 <div class="wrap">
 <div class="intro">
-  <div class="eyebrow">Well Infused · Functional Fusion Protocol</div>
-  <h1>Four ways to make a pad that is <em>not</em> a menu.</h1>
-  <p class="lede">Every pathway has to be pre-printed, which makes the sheet structurally a list of all seven. So the whole design problem is making a pre-printed list read as <b>a determination that was already made</b> rather than a set of options on offer. Each of the four answers that differently. Both states are shown: the blank pad as it comes off the press, and the same sheet after a visit.</p>
+  <div class="eyebrow">Well Infused &middot; Functional Fusion Protocol</div>
+  <h1>The pad, and the <em>formulary</em> behind it.</h1>
+  <p class="lede">The prescription pad direction is settled: <b>Order of Care</b>, the clinical-order
+  layout, with the return date in a light wash of the brand green. Two options below differ only in
+  whether the sheet carries a Notes block. Behind the pad sits a four-page formulary, which is the
+  NP&rsquo;s reference for everything the pad can prescribe.</p>
   <div class="meta">
-    <div><dt>Format</dt><dd>US Letter, 8.5 × 11 in</dd></div>
+    <div><dt>Format</dt><dd>US Letter, 8.5 &times; 11 in</dd></div>
     <div><dt>Print</dt><dd>Professional, full bleed</dd></div>
-    <div><dt>Type</dt><dd>Avenir · Didot</dd></div>
-    <div><dt>Ink</dt><dd>376C · 5405C · 403C</dd></div>
+    <div><dt>Type</dt><dd>Avenir &middot; Didot</dd></div>
+    <div><dt>Ink</dt><dd>376C &middot; 5405C &middot; 403C</dd></div>
   </div>
 </div>
-<section class="concept">
-  <header class="ch"><div class="ch-n">01</div>
-    <div><h2>Order of Care</h2><p class="ch-tag">The authority of a real clinical order.</p></div></header>
-  <div class="ch-body"><p>Borrows the credibility of a lab requisition: tight caps labels, a ruled field structure, and a plain-language descriptor under every pathway so the patient can read it again at home. The Foundation sits in a full-bleed blue band with its two green dots <b>already filled at press time</b>, so the sheet arrives with the foundation prescribed before the NP writes a word. Green ink appears nowhere else on the page, which means a green dot can only ever mean prescribed.</p><ul class="ch-notes"><li>Most information per page, and the only concept that explains each pathway to the patient.</li><li>Reads as a medical order. That is the point, but it is also the least warm of the three.</li><li>Safest choice if a copy goes in the chart.</li></ul></div>
-  <div class="pair k1">
-    <figure><figcaption>As printed</figcaption><div class="shot"><div class="sheet"><div class="pad">
+
+<section class="sec">
+  <header class="sh"><h2>Option A</h2><span class="badge">Original layout</span>
+    <p class="stag">The sheet as chosen, nothing added.</p></header>
+  <div class="body"><div class="prose"><p>The Foundation sits in a full-bleed blue band with its two green dots <b>already filled at
+    press time</b>, so the sheet arrives with the foundation prescribed before the NP writes a word.
+    Green ink appears nowhere else, which means a green dot can only ever mean prescribed.</p>
+    <p>Pathway rows run at 38pt, the most generous of any version, and each carries a plain-language
+    line the patient can re-read at home.</p></div><ul class="notes">
+      <li>Roomiest pathway rows of the two.</li>
+      <li>No space for anything the printed fields do not cover.</li>
+      <li>Simplest to print and the least to go wrong.</li>
+    </ul>
+  </div>
+  <div class="pair pa"><figure><figcaption>As printed</figcaption><div class="shot"><div class="sheet"><div class="pad">
   <div class="mast">
     <div class="lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="104.05 241.55 209.46 135.49" fill="currentColor"><path fill-rule="evenodd" d="M 292.269531 278.527344 C 293.089844 273.839844 297.554688 270.699219 302.242188 271.519531 C 306.929688 272.339844 310.066406 276.804688 309.25 281.492188 C 309.21875 281.675781 298.363281 345.234375 270.574219 345.234375 C 255.074219 345.234375 247.703125 325.148438 239.796875 303.589844 C 232.878906 284.734375 225.410156 264.378906 216.667969 264.378906 C 208.5625 264.378906 199.722656 292.253906 191.3125 318.769531 C 181.855469 348.59375 172.835938 377.039062 155.753906 377.039062 C 137.144531 377.039062 128.804688 345.695312 120.96875 316.246094 C 115.636719 296.214844 104.046875 260.0625 108.859375 260.0625 C 123.828125 260.0625 130.519531 285.207031 137.613281 311.863281 C 143.789062 335.082031 147.535156 359.785156 155.753906 359.785156 C 161.902344 359.71875 167.371094 337.230469 174.871094 313.585938 C 185.148438 281.183594 195.949219 247.128906 216.667969 247.128906 C 237.429688 247.128906 247.054688 273.359375 255.96875 297.660156 C 261.726562 313.359375 265.945312 327.980469 270.574219 327.980469 C 283.742188 327.980469 292.246094 278.664062 292.269531 278.527344"/><path fill-rule="evenodd" d="M 313.511719 250.328125 C 313.511719 245.480469 309.578125 241.550781 304.730469 241.550781 C 299.882812 241.550781 295.953125 245.480469 295.953125 250.328125 C 295.953125 255.179688 299.882812 259.109375 304.730469 259.109375 C 309.578125 259.109375 313.511719 255.179688 313.511719 250.328125"/></svg><div class="wm"><b>well</b><span>infused</span></div></div>
     <div class="doc"><div class="eyebrow">Clinical order</div><h1>Functional Fusion<br>Protocol</h1></div>
@@ -358,8 +348,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-
     <div class="foot"><p>Pathways left unmarked are not part of this protocol.</p>
       <span class="stamp">Well Infused</span></div>
   </div>
-</div></div></div></figure>
-    <figure><figcaption>As prescribed</figcaption><div class="shot"><div class="sheet"><div class="pad">
+</div></div></div></figure><figure><figcaption>As prescribed</figcaption><div class="shot"><div class="sheet"><div class="pad">
   <div class="mast">
     <div class="lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="104.05 241.55 209.46 135.49" fill="currentColor"><path fill-rule="evenodd" d="M 292.269531 278.527344 C 293.089844 273.839844 297.554688 270.699219 302.242188 271.519531 C 306.929688 272.339844 310.066406 276.804688 309.25 281.492188 C 309.21875 281.675781 298.363281 345.234375 270.574219 345.234375 C 255.074219 345.234375 247.703125 325.148438 239.796875 303.589844 C 232.878906 284.734375 225.410156 264.378906 216.667969 264.378906 C 208.5625 264.378906 199.722656 292.253906 191.3125 318.769531 C 181.855469 348.59375 172.835938 377.039062 155.753906 377.039062 C 137.144531 377.039062 128.804688 345.695312 120.96875 316.246094 C 115.636719 296.214844 104.046875 260.0625 108.859375 260.0625 C 123.828125 260.0625 130.519531 285.207031 137.613281 311.863281 C 143.789062 335.082031 147.535156 359.785156 155.753906 359.785156 C 161.902344 359.71875 167.371094 337.230469 174.871094 313.585938 C 185.148438 281.183594 195.949219 247.128906 216.667969 247.128906 C 237.429688 247.128906 247.054688 273.359375 255.96875 297.660156 C 261.726562 313.359375 265.945312 327.980469 270.574219 327.980469 C 283.742188 327.980469 292.246094 278.664062 292.269531 278.527344"/><path fill-rule="evenodd" d="M 313.511719 250.328125 C 313.511719 245.480469 309.578125 241.550781 304.730469 241.550781 C 299.882812 241.550781 295.953125 245.480469 295.953125 250.328125 C 295.953125 255.179688 299.882812 259.109375 304.730469 259.109375 C 309.578125 259.109375 313.511719 255.179688 313.511719 250.328125"/></svg><div class="wm"><b>well</b><span>infused</span></div></div>
     <div class="doc"><div class="eyebrow">Clinical order</div><h1>Functional Fusion<br>Protocol</h1></div>
@@ -401,303 +390,267 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-
     <div class="foot"><p>Pathways left unmarked are not part of this protocol.</p>
       <span class="stamp">Well Infused</span></div>
   </div>
-</div></div></div></figure>
+</div></div></div></figure></div>
+</section>
+
+<section class="sec">
+  <header class="sh"><h2>Option B</h2><span class="badge">With notes</span>
+    <p class="stag">Same sheet, plus two ruled lines for the visit.</p></header>
+  <div class="body"><div class="prose"><p>Identical to Option A except for a ruled <b>Notes</b> block under the last pathway, for
+    anything the visit turned up that no printed field covers.</p>
+    <p>Concept 01 has almost no spare vertical space, so the Notes block is paid for: rows compress
+    from 38pt to 33pt, with small trims to the foundation band and the sign-off. <b>That is the
+    whole trade</b>, writing room against row breathing room.</p></div><ul class="notes">
+      <li>Two 24pt ruled lines, normal handwriting height.</li>
+      <li>Rows at 33pt rather than 38pt.</li>
+      <li>Closer to how the current pad works, which has an &ldquo;Other&rdquo; line.</li>
+    </ul>
   </div>
-</section><section class="concept">
-  <header class="ch"><div class="ch-n">02</div>
-    <div><h2>The Spine</h2><p class="ch-tag">The protocol drawn as a structure, not a list.</p></div></header>
-  <div class="ch-body"><p>A blue spine runs down from the Foundation block and terminates in the reassessment date. Each pathway is a node on that spine, and the ones the NP fills are the ones drawing from the foundation. This is the hub-and-foundation graphic solved typographically, so choosing it also seeds the interactive version later. Didot returns on exactly two words, which is the use the brand guide specifies.</p><ul class="ch-notes"><li>The only concept that makes the clinical model visible as a shape.</li><li>Most patient-facing of the three. Reads like a personal document rather than a form.</li><li>Least room for detail: no pathway descriptions, and the fewest fields.</li></ul></div>
-  <div class="pair k2">
-    <figure><figcaption>As printed</figcaption><div class="shot"><div class="sheet"><div class="pad">
+  <div class="pair pb"><figure><figcaption>As printed</figcaption><div class="shot"><div class="sheet"><div class="pad">
   <div class="mast">
     <div class="lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="104.05 241.55 209.46 135.49" fill="currentColor"><path fill-rule="evenodd" d="M 292.269531 278.527344 C 293.089844 273.839844 297.554688 270.699219 302.242188 271.519531 C 306.929688 272.339844 310.066406 276.804688 309.25 281.492188 C 309.21875 281.675781 298.363281 345.234375 270.574219 345.234375 C 255.074219 345.234375 247.703125 325.148438 239.796875 303.589844 C 232.878906 284.734375 225.410156 264.378906 216.667969 264.378906 C 208.5625 264.378906 199.722656 292.253906 191.3125 318.769531 C 181.855469 348.59375 172.835938 377.039062 155.753906 377.039062 C 137.144531 377.039062 128.804688 345.695312 120.96875 316.246094 C 115.636719 296.214844 104.046875 260.0625 108.859375 260.0625 C 123.828125 260.0625 130.519531 285.207031 137.613281 311.863281 C 143.789062 335.082031 147.535156 359.785156 155.753906 359.785156 C 161.902344 359.71875 167.371094 337.230469 174.871094 313.585938 C 185.148438 281.183594 195.949219 247.128906 216.667969 247.128906 C 237.429688 247.128906 247.054688 273.359375 255.96875 297.660156 C 261.726562 313.359375 265.945312 327.980469 270.574219 327.980469 C 283.742188 327.980469 292.246094 278.664062 292.269531 278.527344"/><path fill-rule="evenodd" d="M 313.511719 250.328125 C 313.511719 245.480469 309.578125 241.550781 304.730469 241.550781 C 299.882812 241.550781 295.953125 245.480469 295.953125 250.328125 C 295.953125 255.179688 299.882812 259.109375 304.730469 259.109375 C 309.578125 259.109375 313.511719 255.179688 313.511719 250.328125"/></svg><div class="wm"><b>well</b><span>infused</span></div></div>
-    <div class="tag">Functional Fusion Protocol</div>
-  </div>
-  <div class="hero">
-    <h1>This is <em>your</em><br>protocol.</h1>
-    <p class="sub">Not a menu, and not a list of what we offer. What is marked below was determined from your labs before you read it.</p>
-    <div class="who"><div><span class="lab">Prepared for</span><div class="slot"></div></div><div><span class="lab">Visit date</span><div class="slot"></div></div><div><span class="lab">Prescribing NP</span><div class="slot"></div></div></div>
-  </div>
+    <div class="doc"><div class="eyebrow">Clinical order</div><h1>Functional Fusion<br>Protocol</h1></div>
+  </div><div class="mast-rule"></div>
+  <div class="who"><div><span class="lab">Patient</span><div class="slot"></div></div><div><span class="lab">Date of birth</span><div class="slot"></div></div><div><span class="lab">Visit date</span><div class="slot"></div></div><div><span class="lab">Prescribing NP</span><div class="slot"></div></div></div>
   <div class="found">
-    <span class="lab">Where every protocol begins</span>
-    <h2>The <em>foundation</em> is already yours.</h2>
-    <div class="f-grid">
-      <div class="f-item"><h3>Foundational Labs</h3>
-        <p>Drawn before anything is prescribed, repeated at reassessment to measure change.</p></div>
-      <div class="f-item"><h3>Nutritional Foundation &amp; Supplements</h3>
-        <p>Formulated to your lab results. Not to a catalog, and not to your symptoms.</p></div>
-    </div>
-  </div>
-  <div class="px">
-    <div class="spine"></div>
-    <div>
-      <div class="px-head"><h2>Pathways</h2><p>Marked pathways draw from the foundation</p></div>
-      <div class="px-cols"><span></span><span class="lab">Specific item / formulation</span><span class="lab">Frequency</span></div>
-      <div class="rows"><div class="row"><span class="node"><i></i></span>
-        <h3>Hormone Therapy &amp; Optimization</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Peptides &amp; Compounds</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>IV Therapy</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Ozone Therapy</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Vitamin Injections</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Salt Room</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Regenerative Medicine</h3><div class="slot"></div><div class="slot"></div></div></div>
-    </div>
-  </div>
-  <div class="close">
-    <div class="term"></div>
-    <div class="close-in">
-      <div class="creed">Symptom resolution is a byproduct of restored function, not the goal.</div>
-      <div class="sign">
-        <div><span class="lab">Prescribing NP signature</span><div class="slot"></div></div>
-        <div><span class="lab">Return for reassessment</span><div class="slot"></div></div>
-      </div>
-      <div class="foot"><p>Pathways left unmarked are not part of this protocol.</p><span>Well Infused</span></div>
-    </div>
-  </div>
-</div></div></div></figure>
-    <figure><figcaption>As prescribed</figcaption><div class="shot"><div class="sheet"><div class="pad">
-  <div class="mast">
-    <div class="lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="104.05 241.55 209.46 135.49" fill="currentColor"><path fill-rule="evenodd" d="M 292.269531 278.527344 C 293.089844 273.839844 297.554688 270.699219 302.242188 271.519531 C 306.929688 272.339844 310.066406 276.804688 309.25 281.492188 C 309.21875 281.675781 298.363281 345.234375 270.574219 345.234375 C 255.074219 345.234375 247.703125 325.148438 239.796875 303.589844 C 232.878906 284.734375 225.410156 264.378906 216.667969 264.378906 C 208.5625 264.378906 199.722656 292.253906 191.3125 318.769531 C 181.855469 348.59375 172.835938 377.039062 155.753906 377.039062 C 137.144531 377.039062 128.804688 345.695312 120.96875 316.246094 C 115.636719 296.214844 104.046875 260.0625 108.859375 260.0625 C 123.828125 260.0625 130.519531 285.207031 137.613281 311.863281 C 143.789062 335.082031 147.535156 359.785156 155.753906 359.785156 C 161.902344 359.71875 167.371094 337.230469 174.871094 313.585938 C 185.148438 281.183594 195.949219 247.128906 216.667969 247.128906 C 237.429688 247.128906 247.054688 273.359375 255.96875 297.660156 C 261.726562 313.359375 265.945312 327.980469 270.574219 327.980469 C 283.742188 327.980469 292.246094 278.664062 292.269531 278.527344"/><path fill-rule="evenodd" d="M 313.511719 250.328125 C 313.511719 245.480469 309.578125 241.550781 304.730469 241.550781 C 299.882812 241.550781 295.953125 245.480469 295.953125 250.328125 C 295.953125 255.179688 299.882812 259.109375 304.730469 259.109375 C 309.578125 259.109375 313.511719 255.179688 313.511719 250.328125"/></svg><div class="wm"><b>well</b><span>infused</span></div></div>
-    <div class="tag">Functional Fusion Protocol</div>
-  </div>
-  <div class="hero">
-    <h1>This is <em>your</em><br>protocol.</h1>
-    <p class="sub">Not a menu, and not a list of what we offer. What is marked below was determined from your labs before you read it.</p>
-    <div class="who"><div><span class="lab">Prepared for</span><div class="slot"><span class="ink">Jane R. Doe</span></div></div><div><span class="lab">Visit date</span><div class="slot"><span class="ink">21·08·26</span></div></div><div><span class="lab">Prescribing NP</span><div class="slot"><span class="ink">E. Del Giudice, APRN</span></div></div></div>
-  </div>
-  <div class="found">
-    <span class="lab">Where every protocol begins</span>
-    <h2>The <em>foundation</em> is already yours.</h2>
-    <div class="f-grid">
-      <div class="f-item"><h3>Foundational Labs</h3>
-        <p>Drawn before anything is prescribed, repeated at reassessment to measure change.</p></div>
-      <div class="f-item"><h3>Nutritional Foundation &amp; Supplements</h3>
-        <p>Formulated to your lab results. Not to a catalog, and not to your symptoms.</p></div>
-    </div>
-  </div>
-  <div class="px">
-    <div class="spine"></div>
-    <div>
-      <div class="px-head"><h2>Pathways</h2><p>Marked pathways draw from the foundation</p></div>
-      <div class="px-cols"><span></span><span class="lab">Specific item / formulation</span><span class="lab">Frequency</span></div>
-      <div class="rows"><div class="row"><span class="node on"><i></i></span>
-        <h3>Hormone Therapy &amp; Optimization</h3><div class="slot"><span class="ink">Estradiol pellet 12mg</span></div><div class="slot"><span class="ink">q 12 wks</span></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Peptides &amp; Compounds</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node on"><i></i></span>
-        <h3>IV Therapy</h3><div class="slot"><span class="ink">FF 6-Series</span></div><div class="slot"><span class="ink">wks 1·2·4·6·8·10</span></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Ozone Therapy</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node on"><i></i></span>
-        <h3>Vitamin Injections</h3><div class="slot"><span class="ink">B12 / MIC</span></div><div class="slot"><span class="ink">weekly</span></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Salt Room</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Regenerative Medicine</h3><div class="slot"></div><div class="slot"></div></div></div>
-    </div>
-  </div>
-  <div class="close">
-    <div class="term"></div>
-    <div class="close-in">
-      <div class="creed">Symptom resolution is a byproduct of restored function, not the goal.</div>
-      <div class="sign">
-        <div><span class="lab">Prescribing NP signature</span><div class="slot"></div></div>
-        <div><span class="lab">Return for reassessment</span><div class="slot"><span class="ink">04 · 12 · 26</span></div></div>
-      </div>
-      <div class="foot"><p>Pathways left unmarked are not part of this protocol.</p><span>Well Infused</span></div>
-    </div>
-  </div>
-</div></div></div></figure>
-  </div>
-</section><section class="concept">
-  <header class="ch"><div class="ch-n">03</div>
-    <div><h2>Standing Order</h2><p class="ch-tag">No checkbox anywhere on the sheet.</p></div></header>
-  <div class="ch-body"><p>There is nothing to tick, because nothing was chosen. A pathway becomes prescribed when the NP writes into it, and an empty tinted slot reads as deliberately blank rather than unticked. Pathway names are set large but recessive, so from across a kitchen you see only the filled blocks. The Foundation is a charcoal slab with no fields at all, and the single saturated moment on the page is the green return-date band.</p><ul class="ch-notes"><li>Strongest answer to the menu problem, because the menu affordance is simply gone.</li><li>Best as a fridge document. Still legible at four feet.</li><li>Asks the NP to write in every prescribed row, with no quick tick.</li><li>Heaviest ink coverage, so the highest print cost.</li></ul></div>
-  <div class="pair k3">
-    <figure><figcaption>As printed</figcaption><div class="shot"><div class="sheet"><div class="pad">
-  <div class="mast">
-    <div class="lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="104.05 241.55 209.46 135.49" fill="currentColor"><path fill-rule="evenodd" d="M 292.269531 278.527344 C 293.089844 273.839844 297.554688 270.699219 302.242188 271.519531 C 306.929688 272.339844 310.066406 276.804688 309.25 281.492188 C 309.21875 281.675781 298.363281 345.234375 270.574219 345.234375 C 255.074219 345.234375 247.703125 325.148438 239.796875 303.589844 C 232.878906 284.734375 225.410156 264.378906 216.667969 264.378906 C 208.5625 264.378906 199.722656 292.253906 191.3125 318.769531 C 181.855469 348.59375 172.835938 377.039062 155.753906 377.039062 C 137.144531 377.039062 128.804688 345.695312 120.96875 316.246094 C 115.636719 296.214844 104.046875 260.0625 108.859375 260.0625 C 123.828125 260.0625 130.519531 285.207031 137.613281 311.863281 C 143.789062 335.082031 147.535156 359.785156 155.753906 359.785156 C 161.902344 359.71875 167.371094 337.230469 174.871094 313.585938 C 185.148438 281.183594 195.949219 247.128906 216.667969 247.128906 C 237.429688 247.128906 247.054688 273.359375 255.96875 297.660156 C 261.726562 313.359375 265.945312 327.980469 270.574219 327.980469 C 283.742188 327.980469 292.246094 278.664062 292.269531 278.527344"/><path fill-rule="evenodd" d="M 313.511719 250.328125 C 313.511719 245.480469 309.578125 241.550781 304.730469 241.550781 C 299.882812 241.550781 295.953125 245.480469 295.953125 250.328125 C 295.953125 255.179688 299.882812 259.109375 304.730469 259.109375 C 309.578125 259.109375 313.511719 255.179688 313.511719 250.328125"/></svg><div class="wm"><b>well</b><span>infused</span></div></div>
-    <div class="tag">Functional Fusion Protocol<br>Standing clinical order</div>
-  </div>
-  <div class="who"><div><span class="lab">Patient</span><div class="slot"></div></div><div><span class="lab">Visit date</span><div class="slot"></div></div><div><span class="lab">Prescribing NP</span><div class="slot"></div></div></div>
-  <div class="found">
-    <span class="lab">The foundation · prescribed at intake</span>
-    <div class="f-grid">
-      <div class="f-item"><h3>Foundational Labs</h3>
-        <p>Drawn before anything is prescribed, repeated at reassessment to measure change.</p></div>
-      <div class="f-item"><h3>Nutritional Foundation &amp; Supplements</h3>
-        <p>Formulated to your lab results. Not to a catalog, and not to your symptoms.</p></div>
-    </div>
-    <div class="found-note">Nothing above is written in, because <b>nothing above is optional.</b> Every protocol starts here.</div>
-  </div>
-  <div class="px-head"><h2>Pathways</h2><p>Determined by your NP from your lab findings</p></div>
-  <div class="px-cols"><span></span><span class="lab">Prescribed item</span><span class="lab">How often</span></div>
-  <div class="rows"><div class="row"><h3>Hormone Therapy &amp; Optimization</h3>
-        <div class="slot"></div><div class="slot b"></div></div><div class="row"><h3>Peptides &amp; Compounds</h3>
-        <div class="slot"></div><div class="slot b"></div></div><div class="row"><h3>IV Therapy</h3>
-        <div class="slot"></div><div class="slot b"></div></div><div class="row"><h3>Ozone Therapy</h3>
-        <div class="slot"></div><div class="slot b"></div></div><div class="row"><h3>Vitamin Injections</h3>
-        <div class="slot"></div><div class="slot b"></div></div><div class="row"><h3>Salt Room</h3>
-        <div class="slot"></div><div class="slot b"></div></div><div class="row"><h3>Regenerative Medicine</h3>
-        <div class="slot"></div><div class="slot b"></div></div></div>
-  <div class="band">
-    <div><span class="lab">This protocol has an end date</span><h3>Return for reassessment</h3></div>
-    <div class="date">___ · ___ · ___</div>
-  </div>
-  <div class="close">
-    <div class="creed">Symptom resolution is a <b>byproduct of restored function</b>, not the goal we chase.</div>
-    <div class="sign">
-      <div><span class="lab">Prescribing NP signature</span><div class="slot"></div></div>
-      <div><span class="lab">Date</span><div class="slot"></div></div>
-    </div>
-    <div class="foot"><p>A pathway with nothing written beside it is not part of this protocol.</p><span>Well Infused</span></div>
-  </div>
-</div></div></div></figure>
-    <figure><figcaption>As prescribed</figcaption><div class="shot"><div class="sheet"><div class="pad">
-  <div class="mast">
-    <div class="lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="104.05 241.55 209.46 135.49" fill="currentColor"><path fill-rule="evenodd" d="M 292.269531 278.527344 C 293.089844 273.839844 297.554688 270.699219 302.242188 271.519531 C 306.929688 272.339844 310.066406 276.804688 309.25 281.492188 C 309.21875 281.675781 298.363281 345.234375 270.574219 345.234375 C 255.074219 345.234375 247.703125 325.148438 239.796875 303.589844 C 232.878906 284.734375 225.410156 264.378906 216.667969 264.378906 C 208.5625 264.378906 199.722656 292.253906 191.3125 318.769531 C 181.855469 348.59375 172.835938 377.039062 155.753906 377.039062 C 137.144531 377.039062 128.804688 345.695312 120.96875 316.246094 C 115.636719 296.214844 104.046875 260.0625 108.859375 260.0625 C 123.828125 260.0625 130.519531 285.207031 137.613281 311.863281 C 143.789062 335.082031 147.535156 359.785156 155.753906 359.785156 C 161.902344 359.71875 167.371094 337.230469 174.871094 313.585938 C 185.148438 281.183594 195.949219 247.128906 216.667969 247.128906 C 237.429688 247.128906 247.054688 273.359375 255.96875 297.660156 C 261.726562 313.359375 265.945312 327.980469 270.574219 327.980469 C 283.742188 327.980469 292.246094 278.664062 292.269531 278.527344"/><path fill-rule="evenodd" d="M 313.511719 250.328125 C 313.511719 245.480469 309.578125 241.550781 304.730469 241.550781 C 299.882812 241.550781 295.953125 245.480469 295.953125 250.328125 C 295.953125 255.179688 299.882812 259.109375 304.730469 259.109375 C 309.578125 259.109375 313.511719 255.179688 313.511719 250.328125"/></svg><div class="wm"><b>well</b><span>infused</span></div></div>
-    <div class="tag">Functional Fusion Protocol<br>Standing clinical order</div>
-  </div>
-  <div class="who"><div><span class="lab">Patient</span><div class="slot"><span class="ink">Jane R. Doe</span></div></div><div><span class="lab">Visit date</span><div class="slot"><span class="ink">21·08·26</span></div></div><div><span class="lab">Prescribing NP</span><div class="slot"><span class="ink">E. Del Giudice, APRN</span></div></div></div>
-  <div class="found">
-    <span class="lab">The foundation · prescribed at intake</span>
-    <div class="f-grid">
-      <div class="f-item"><h3>Foundational Labs</h3>
-        <p>Drawn before anything is prescribed, repeated at reassessment to measure change.</p></div>
-      <div class="f-item"><h3>Nutritional Foundation &amp; Supplements</h3>
-        <p>Formulated to your lab results. Not to a catalog, and not to your symptoms.</p></div>
-    </div>
-    <div class="found-note">Nothing above is written in, because <b>nothing above is optional.</b> Every protocol starts here.</div>
-  </div>
-  <div class="px-head"><h2>Pathways</h2><p>Determined by your NP from your lab findings</p></div>
-  <div class="px-cols"><span></span><span class="lab">Prescribed item</span><span class="lab">How often</span></div>
-  <div class="rows"><div class="row"><h3>Hormone Therapy &amp; Optimization</h3>
-        <div class="slot"><span class="ink">Estradiol pellet 12mg</span></div><div class="slot b"><span class="ink">q 12 wks</span></div></div><div class="row"><h3>Peptides &amp; Compounds</h3>
-        <div class="slot"></div><div class="slot b"></div></div><div class="row"><h3>IV Therapy</h3>
-        <div class="slot"><span class="ink">FF 6-Series</span></div><div class="slot b"><span class="ink">wks 1·2·4·6·8·10</span></div></div><div class="row"><h3>Ozone Therapy</h3>
-        <div class="slot"></div><div class="slot b"></div></div><div class="row"><h3>Vitamin Injections</h3>
-        <div class="slot"><span class="ink">B12 / MIC</span></div><div class="slot b"><span class="ink">weekly</span></div></div><div class="row"><h3>Salt Room</h3>
-        <div class="slot"></div><div class="slot b"></div></div><div class="row"><h3>Regenerative Medicine</h3>
-        <div class="slot"></div><div class="slot b"></div></div></div>
-  <div class="band">
-    <div><span class="lab">This protocol has an end date</span><h3>Return for reassessment</h3></div>
-    <div class="date"><span class="ink">04 · 12 · 26</span></div>
-  </div>
-  <div class="close">
-    <div class="creed">Symptom resolution is a <b>byproduct of restored function</b>, not the goal we chase.</div>
-    <div class="sign">
-      <div><span class="lab">Prescribing NP signature</span><div class="slot"></div></div>
-      <div><span class="lab">Date</span><div class="slot"><span class="ink">21 · 08 · 26</span></div></div>
-    </div>
-    <div class="foot"><p>A pathway with nothing written beside it is not part of this protocol.</p><span>Well Infused</span></div>
-  </div>
-</div></div></div></figure>
-  </div>
-</section><section class="concept">
-  <header class="ch"><div class="ch-n">04</div>
-    <div><h2>The Spine, Clinical</h2><p class="ch-tag">Concept 02's structure, concept 01's colour, with room to write.</p></div></header>
-  <div class="ch-body"><p>The spine layout in concept 01's clinical colour: the Foundation is the full-bleed blue band with its two green dots printed already filled. The spine descends from it, threads the pathway nodes, and closes on a solid node of its own. Beneath that, a ruled <b>Notes</b> block takes whatever height is left over for anything the visit turned up that no printed field covers, and the return date sits in a boxed panel washed with a light tint of the brand green rather than a full-width bar.</p><ul class="ch-notes"><li>Reads as clinical rather than editorial, while keeping the shape of the model visible.</li><li>Ruled Notes area for anything the printed fields do not cover.</li><li>Return date is boxed rather than banded, which reads quieter and more like a chart document.</li><li>Tightest of the four vertically. Least slack if content gets added later.</li></ul></div>
-  <div class="pair k4">
-    <figure><figcaption>As printed</figcaption><div class="shot"><div class="sheet"><div class="pad">
-  <div class="mast">
-    <div class="lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="104.05 241.55 209.46 135.49" fill="currentColor"><path fill-rule="evenodd" d="M 292.269531 278.527344 C 293.089844 273.839844 297.554688 270.699219 302.242188 271.519531 C 306.929688 272.339844 310.066406 276.804688 309.25 281.492188 C 309.21875 281.675781 298.363281 345.234375 270.574219 345.234375 C 255.074219 345.234375 247.703125 325.148438 239.796875 303.589844 C 232.878906 284.734375 225.410156 264.378906 216.667969 264.378906 C 208.5625 264.378906 199.722656 292.253906 191.3125 318.769531 C 181.855469 348.59375 172.835938 377.039062 155.753906 377.039062 C 137.144531 377.039062 128.804688 345.695312 120.96875 316.246094 C 115.636719 296.214844 104.046875 260.0625 108.859375 260.0625 C 123.828125 260.0625 130.519531 285.207031 137.613281 311.863281 C 143.789062 335.082031 147.535156 359.785156 155.753906 359.785156 C 161.902344 359.71875 167.371094 337.230469 174.871094 313.585938 C 185.148438 281.183594 195.949219 247.128906 216.667969 247.128906 C 237.429688 247.128906 247.054688 273.359375 255.96875 297.660156 C 261.726562 313.359375 265.945312 327.980469 270.574219 327.980469 C 283.742188 327.980469 292.246094 278.664062 292.269531 278.527344"/><path fill-rule="evenodd" d="M 313.511719 250.328125 C 313.511719 245.480469 309.578125 241.550781 304.730469 241.550781 C 299.882812 241.550781 295.953125 245.480469 295.953125 250.328125 C 295.953125 255.179688 299.882812 259.109375 304.730469 259.109375 C 309.578125 259.109375 313.511719 255.179688 313.511719 250.328125"/></svg><div class="wm"><b>well</b><span>infused</span></div></div>
-    <div class="tag">Functional Fusion Protocol</div>
-  </div>
-  <div class="hero">
-    <h1>This is <em>your</em> protocol.</h1>
-    <p class="sub">Not a menu, and not a list of what we offer. What is marked below was determined from your labs before you read it.</p>
-    <div class="who"><div><span class="lab">Prepared for</span><div class="slot"></div></div><div><span class="lab">Visit date</span><div class="slot"></div></div><div><span class="lab">Prescribing NP</span><div class="slot"></div></div></div>
-  </div>
-  <div class="found">
-    <span class="lab">Where every protocol begins</span>
-    <h2>The <em>foundation</em> is already yours.</h2>
-    <div class="f-grid">
-      <div class="f-item"><span class="disc"></span><div><h3>Foundational Labs</h3>
-        <p>Drawn before anything is prescribed, repeated at reassessment to measure change.</p></div></div>
-      <div class="f-item"><span class="disc"></span><div><h3>Nutritional Foundation &amp; Supplements</h3>
-        <p>Formulated to your lab results. Not to a catalog, and not to your symptoms.</p></div></div>
-    </div>
+    <div class="found-top"><h2>The Foundation</h2><p>Prescribed at intake · not variable</p></div>
+    <div class="f-item"><span class="disc"></span><div><h3>Foundational Labs</h3>
+      <p>Drawn before anything is prescribed, and repeated at reassessment to measure change.</p></div></div>
+    <div class="f-item"><span class="disc"></span><div><h3>Nutritional Foundation &amp; Supplements</h3>
+      <p>Formulated to your lab results. Not to a catalog, and not to your symptoms.</p></div></div>
     <div class="found-note">Both are already marked, because both are already yours. Every protocol begins here.</div>
   </div>
-  <div class="px">
-    <div class="spine"></div>
-    <div class="px-body">
-      <div class="px-head"><h2>Pathways</h2><p>Marked pathways draw from the foundation</p></div>
-      <div class="px-cols"><span></span><span class="lab">Specific item / formulation</span><span class="lab">Frequency</span></div>
-      <div class="rows"><div class="row"><span class="node"><i></i></span>
-        <h3>Hormone Therapy &amp; Optimization</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Peptides &amp; Compounds</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>IV Therapy</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Ozone Therapy</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Vitamin Injections</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Salt Room</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Regenerative Medicine</h3><div class="slot"></div><div class="slot"></div></div></div>
-      <div class="notes"><span class="lab">Notes</span>
-        <div class="lines"><i></i><i></i></div></div>
-    </div>
-  </div>
+  <div class="px-head"><h2>Pathways</h2><p>Marked by your NP from your lab findings</p></div>
+  <div class="px-rule"></div>
+  <div class="px-cols"><span class="lab c">Prescribed</span><span></span><span class="lab">Specific item / formulation</span><span class="lab">Frequency</span></div>
+  <div class="row"><span class="ring"></span>
+        <div><h3>Hormone Therapy &amp; Optimization</h3><div class="desc">Titrated to lab values, reassessed on schedule.</div></div>
+        <div class="slot"></div><div class="slot"></div></div><div class="row"><span class="ring"></span>
+        <div><h3>Peptides &amp; Compounds</h3><div class="desc">Selected from findings on your panel.</div></div>
+        <div class="slot"></div><div class="slot"></div></div><div class="row"><span class="ring"></span>
+        <div><h3>IV Therapy</h3><div class="desc">Lab-driven infusion series, dosed by finding.</div></div>
+        <div class="slot"></div><div class="slot"></div></div><div class="row"><span class="ring"></span>
+        <div><h3>Ozone Therapy</h3><div class="desc">Route and course set at time of order.</div></div>
+        <div class="slot"></div><div class="slot"></div></div><div class="row"><span class="ring"></span>
+        <div><h3>Vitamin Injections</h3><div class="desc">Between-visit support for identified deficits.</div></div>
+        <div class="slot"></div><div class="slot"></div></div><div class="row"><span class="ring"></span>
+        <div><h3>Salt Room</h3><div class="desc">Adjunct respiratory and recovery support.</div></div>
+        <div class="slot"></div><div class="slot"></div></div><div class="row"><span class="ring"></span>
+        <div><h3>Regenerative Medicine</h3><div class="desc">Course determined at consultation.</div></div>
+        <div class="slot"></div><div class="slot"></div></div>
+  <div class="notes"><span class="lab">Notes</span><div class="lines"><i></i><i></i></div></div>
   <div class="close">
-    <div class="creed">Symptom resolution is a byproduct of restored function, not the goal.</div>
+    <div class="creed">Symptom resolution is a <b>byproduct of restored function</b>, not the goal we chase.</div>
     <div class="sign">
       <div><span class="lab">Prescribing NP</span><div class="slot"></div></div>
       <div class="reassess"><span class="lab">Return for reassessment</span>
         <div class="big">____ · ____ · ____</div></div>
     </div>
-    <div class="foot"><p>Pathways left unmarked are not part of this protocol.</p><span>Well Infused</span></div>
+    <div class="foot"><p>Pathways left unmarked are not part of this protocol.</p>
+      <span class="stamp">Well Infused</span></div>
   </div>
-</div></div></div></figure>
-    <figure><figcaption>As prescribed</figcaption><div class="shot"><div class="sheet"><div class="pad">
+</div></div></div></figure><figure><figcaption>As prescribed</figcaption><div class="shot"><div class="sheet"><div class="pad">
   <div class="mast">
     <div class="lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="104.05 241.55 209.46 135.49" fill="currentColor"><path fill-rule="evenodd" d="M 292.269531 278.527344 C 293.089844 273.839844 297.554688 270.699219 302.242188 271.519531 C 306.929688 272.339844 310.066406 276.804688 309.25 281.492188 C 309.21875 281.675781 298.363281 345.234375 270.574219 345.234375 C 255.074219 345.234375 247.703125 325.148438 239.796875 303.589844 C 232.878906 284.734375 225.410156 264.378906 216.667969 264.378906 C 208.5625 264.378906 199.722656 292.253906 191.3125 318.769531 C 181.855469 348.59375 172.835938 377.039062 155.753906 377.039062 C 137.144531 377.039062 128.804688 345.695312 120.96875 316.246094 C 115.636719 296.214844 104.046875 260.0625 108.859375 260.0625 C 123.828125 260.0625 130.519531 285.207031 137.613281 311.863281 C 143.789062 335.082031 147.535156 359.785156 155.753906 359.785156 C 161.902344 359.71875 167.371094 337.230469 174.871094 313.585938 C 185.148438 281.183594 195.949219 247.128906 216.667969 247.128906 C 237.429688 247.128906 247.054688 273.359375 255.96875 297.660156 C 261.726562 313.359375 265.945312 327.980469 270.574219 327.980469 C 283.742188 327.980469 292.246094 278.664062 292.269531 278.527344"/><path fill-rule="evenodd" d="M 313.511719 250.328125 C 313.511719 245.480469 309.578125 241.550781 304.730469 241.550781 C 299.882812 241.550781 295.953125 245.480469 295.953125 250.328125 C 295.953125 255.179688 299.882812 259.109375 304.730469 259.109375 C 309.578125 259.109375 313.511719 255.179688 313.511719 250.328125"/></svg><div class="wm"><b>well</b><span>infused</span></div></div>
-    <div class="tag">Functional Fusion Protocol</div>
-  </div>
-  <div class="hero">
-    <h1>This is <em>your</em> protocol.</h1>
-    <p class="sub">Not a menu, and not a list of what we offer. What is marked below was determined from your labs before you read it.</p>
-    <div class="who"><div><span class="lab">Prepared for</span><div class="slot"><span class="ink">Jane R. Doe</span></div></div><div><span class="lab">Visit date</span><div class="slot"><span class="ink">21·08·26</span></div></div><div><span class="lab">Prescribing NP</span><div class="slot"><span class="ink">E. Del Giudice, APRN</span></div></div></div>
-  </div>
+    <div class="doc"><div class="eyebrow">Clinical order</div><h1>Functional Fusion<br>Protocol</h1></div>
+  </div><div class="mast-rule"></div>
+  <div class="who"><div><span class="lab">Patient</span><div class="slot"><span class="ink">Jane R. Doe</span></div></div><div><span class="lab">Date of birth</span><div class="slot"><span class="ink">04·17·78</span></div></div><div><span class="lab">Visit date</span><div class="slot"><span class="ink">21·08·26</span></div></div><div><span class="lab">Prescribing NP</span><div class="slot"><span class="ink">E. Del Giudice</span></div></div></div>
   <div class="found">
-    <span class="lab">Where every protocol begins</span>
-    <h2>The <em>foundation</em> is already yours.</h2>
-    <div class="f-grid">
-      <div class="f-item"><span class="disc"></span><div><h3>Foundational Labs</h3>
-        <p>Drawn before anything is prescribed, repeated at reassessment to measure change.</p></div></div>
-      <div class="f-item"><span class="disc"></span><div><h3>Nutritional Foundation &amp; Supplements</h3>
-        <p>Formulated to your lab results. Not to a catalog, and not to your symptoms.</p></div></div>
-    </div>
+    <div class="found-top"><h2>The Foundation</h2><p>Prescribed at intake · not variable</p></div>
+    <div class="f-item"><span class="disc"></span><div><h3>Foundational Labs</h3>
+      <p>Drawn before anything is prescribed, and repeated at reassessment to measure change.</p></div></div>
+    <div class="f-item"><span class="disc"></span><div><h3>Nutritional Foundation &amp; Supplements</h3>
+      <p>Formulated to your lab results. Not to a catalog, and not to your symptoms.</p></div></div>
     <div class="found-note">Both are already marked, because both are already yours. Every protocol begins here.</div>
   </div>
-  <div class="px">
-    <div class="spine"></div>
-    <div class="px-body">
-      <div class="px-head"><h2>Pathways</h2><p>Marked pathways draw from the foundation</p></div>
-      <div class="px-cols"><span></span><span class="lab">Specific item / formulation</span><span class="lab">Frequency</span></div>
-      <div class="rows"><div class="row"><span class="node on"><i></i></span>
-        <h3>Hormone Therapy &amp; Optimization</h3><div class="slot"><span class="ink">Estradiol pellet 12mg</span></div><div class="slot"><span class="ink">q 12 wks</span></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Peptides &amp; Compounds</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node on"><i></i></span>
-        <h3>IV Therapy</h3><div class="slot"><span class="ink">FF 6-Series</span></div><div class="slot"><span class="ink">wks 1·2·4·6·8·10</span></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Ozone Therapy</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node on"><i></i></span>
-        <h3>Vitamin Injections</h3><div class="slot"><span class="ink">B12 / MIC</span></div><div class="slot"><span class="ink">weekly</span></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Salt Room</h3><div class="slot"></div><div class="slot"></div></div><div class="row"><span class="node"><i></i></span>
-        <h3>Regenerative Medicine</h3><div class="slot"></div><div class="slot"></div></div></div>
-      <div class="notes"><span class="lab">Notes</span>
-        <div class="lines"><i></i><i></i></div></div>
-    </div>
-  </div>
+  <div class="px-head"><h2>Pathways</h2><p>Marked by your NP from your lab findings</p></div>
+  <div class="px-rule"></div>
+  <div class="px-cols"><span class="lab c">Prescribed</span><span></span><span class="lab">Specific item / formulation</span><span class="lab">Frequency</span></div>
+  <div class="row"><span class="ring on"></span>
+        <div><h3>Hormone Therapy &amp; Optimization</h3><div class="desc">Titrated to lab values, reassessed on schedule.</div></div>
+        <div class="slot"><span class="ink">Estradiol pellet 12mg</span></div><div class="slot"><span class="ink">q 12 wks</span></div></div><div class="row"><span class="ring"></span>
+        <div><h3>Peptides &amp; Compounds</h3><div class="desc">Selected from findings on your panel.</div></div>
+        <div class="slot"></div><div class="slot"></div></div><div class="row"><span class="ring on"></span>
+        <div><h3>IV Therapy</h3><div class="desc">Lab-driven infusion series, dosed by finding.</div></div>
+        <div class="slot"><span class="ink">FF 6-Series</span></div><div class="slot"><span class="ink">wks 1·2·4·6·8·10</span></div></div><div class="row"><span class="ring"></span>
+        <div><h3>Ozone Therapy</h3><div class="desc">Route and course set at time of order.</div></div>
+        <div class="slot"></div><div class="slot"></div></div><div class="row"><span class="ring on"></span>
+        <div><h3>Vitamin Injections</h3><div class="desc">Between-visit support for identified deficits.</div></div>
+        <div class="slot"><span class="ink">B12 / MIC</span></div><div class="slot"><span class="ink">weekly</span></div></div><div class="row"><span class="ring"></span>
+        <div><h3>Salt Room</h3><div class="desc">Adjunct respiratory and recovery support.</div></div>
+        <div class="slot"></div><div class="slot"></div></div><div class="row"><span class="ring"></span>
+        <div><h3>Regenerative Medicine</h3><div class="desc">Course determined at consultation.</div></div>
+        <div class="slot"></div><div class="slot"></div></div>
+  <div class="notes"><span class="lab">Notes</span><div class="lines"><i></i><i></i></div></div>
   <div class="close">
-    <div class="creed">Symptom resolution is a byproduct of restored function, not the goal.</div>
+    <div class="creed">Symptom resolution is a <b>byproduct of restored function</b>, not the goal we chase.</div>
     <div class="sign">
-      <div><span class="lab">Prescribing NP</span><div class="slot"></div></div>
+      <div><span class="lab">Prescribing NP</span><div class="slot"><span class="ink">E. Del Giudice, APRN</span></div></div>
       <div class="reassess"><span class="lab">Return for reassessment</span>
         <div class="big"><span class="ink">04 · 12 · 26</span></div></div>
     </div>
-    <div class="foot"><p>Pathways left unmarked are not part of this protocol.</p><span>Well Infused</span></div>
+    <div class="foot"><p>Pathways left unmarked are not part of this protocol.</p>
+      <span class="stamp">Well Infused</span></div>
   </div>
-</div></div></div></figure>
-  </div>
+</div></div></div></figure></div>
 </section>
+
+<section class="sec pf">
+  <header class="sh"><h2>The Formulary</h2><span class="badge">4 pages &middot; 111 entries</span>
+    <p class="stag">What the pad prescribes from. NP-facing, never a patient handout.</p></header>
+  <div class="body"><div class="prose"><p><b>Supplements lead the document</b>, because they are the foundation. All 34 come off the
+    current pad in its own eight categories. Hormones and peptides follow, then infusions and
+    procedures, then memberships and open items.</p>
+    <p>The IV, peptide, ozone and regenerative lists were pulled from wellinfused.com rather than
+    the handoff, which was incomplete: peptides went from 2 named compounds to 13, and ozone and
+    regenerative gained named protocols they did not have before.</p>
+    <p>Anything not yet supplied appears as a <b>dashed placeholder row</b> rather than being left
+    out, so gaps read as gaps.</p></div><ul class="notes">
+      <li>Page 1 &mdash; The Foundation. 34 supplements in 8 categories.</li>
+      <li>Page 2 &mdash; Hormones and peptides, split apart.</li>
+      <li>Page 3 &mdash; 10 infusions, 4 lab-driven protocols, injections, ozone, salt room, regenerative.</li>
+      <li>Page 4 &mdash; Memberships, packages, next appointments, and 11 open placeholders.</li>
+    </ul>
+  </div>
+  <div class="pair pf"><figure><figcaption>Page 1 &middot; foundation</figcaption><div class="shot"><div class="sheet"><div class="pad">
+  <div class="mast">
+    <div class="lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="104.05 241.55 209.46 135.49" fill="currentColor"><path fill-rule="evenodd" d="M 292.269531 278.527344 C 293.089844 273.839844 297.554688 270.699219 302.242188 271.519531 C 306.929688 272.339844 310.066406 276.804688 309.25 281.492188 C 309.21875 281.675781 298.363281 345.234375 270.574219 345.234375 C 255.074219 345.234375 247.703125 325.148438 239.796875 303.589844 C 232.878906 284.734375 225.410156 264.378906 216.667969 264.378906 C 208.5625 264.378906 199.722656 292.253906 191.3125 318.769531 C 181.855469 348.59375 172.835938 377.039062 155.753906 377.039062 C 137.144531 377.039062 128.804688 345.695312 120.96875 316.246094 C 115.636719 296.214844 104.046875 260.0625 108.859375 260.0625 C 123.828125 260.0625 130.519531 285.207031 137.613281 311.863281 C 143.789062 335.082031 147.535156 359.785156 155.753906 359.785156 C 161.902344 359.71875 167.371094 337.230469 174.871094 313.585938 C 185.148438 281.183594 195.949219 247.128906 216.667969 247.128906 C 237.429688 247.128906 247.054688 273.359375 255.96875 297.660156 C 261.726562 313.359375 265.945312 327.980469 270.574219 327.980469 C 283.742188 327.980469 292.246094 278.664062 292.269531 278.527344"/><path fill-rule="evenodd" d="M 313.511719 250.328125 C 313.511719 245.480469 309.578125 241.550781 304.730469 241.550781 C 299.882812 241.550781 295.953125 245.480469 295.953125 250.328125 C 295.953125 255.179688 299.882812 259.109375 304.730469 259.109375 C 309.578125 259.109375 313.511719 255.179688 313.511719 250.328125"/></svg><div class="wm"><b>well</b><span>infused</span></div></div>
+    <div class="doc"><div class="eyebrow">Functional Fusion Protocol</div><h1>Formulary</h1></div>
+  </div><div class="mast-rule"></div>
+  <div class="kick"><span class="lab">The Foundation</span>
+    <span class="pg">1 of 4</span></div>
+  
+  <div class="band">
+    <div class="band-top"><h2>The Foundation</h2><p>Prescribed at intake &middot; not variable</p></div>
+    <div class="fgrid">
+      <div class="fitem"><span class="disc"></span><div><h3>Foundational Labs</h3>
+        <p>Drawn before anything below is prescribed, and repeated at reassessment.</p></div></div>
+      <div class="fitem"><span class="disc"></span><div><h3>Nutritional Foundation &amp; Supplements</h3>
+        <p>Formulated from the panel. Everything on this page follows from a finding.</p></div></div>
+    </div>
+  </div>
+  <div class="sec"><h3 class="sech">Nutritional Foundation &amp; Supplements</h3>
+    <span class="sub">Selected by lab finding, not by symptom report</span></div>
+  <div class="cats"><div class="cat"><h4>Red Blood Cell Health</h4><ul><li>Methyl-Fx</li><li>Heme-Fx</li><li>B12-Fx</li></ul></div><div class="cat"><h4>Blood Sugar Health</h4><ul><li>Berine-Fx</li><li>Fast Fuel</li><li>Pendulum GLP-1 Probiotic</li></ul></div><div class="cat"><h4>Heart Health</h4><ul><li>Omega-3</li><li>CoQ10</li><li>CRDO-Fx</li><li>CardioImmune</li><li>N1O1</li></ul></div><div class="cat"><h4>Liver, Kidney &amp; Digestive</h4><ul><li>NAC+</li><li>Probiotic</li><li>GI-Fx</li><li>BPC-157 / GI Stack</li></ul></div><div class="cat"><h4>Minerals &amp; Electrolytes</h4><ul><li>Mg+ Replete</li><li>Mito-Complete</li><li>Just Ingredients Electrolytes</li></ul></div><div class="cat"><h4>Thyroid &amp; Hormones</h4><ul><li>Thyro-Fx</li><li>DIM</li><li>Inositol</li><li>Zinc 15</li><li>DHEA</li><li>His-T / Her-T</li><li>Vitex</li><li>Boron</li></ul></div><div class="cat"><h4>Immune Support</h4><ul><li>Solar-Fx</li><li>Imun-Fx</li><li>Integral D</li></ul></div><div class="cat"><h4>Inflammation &amp; Repair</h4><ul><li>Inflam-Fx</li><li>NAC+</li><li>StemRegen &mdash; Accelerated / Maintenance</li><li>CLGN-Fx</li><li>BPC-157 + TB-500</li></ul></div></div>
+  <div class="write"><span class="lab">Other &middot; not listed above</span><div class="lines"><i></i><i></i><i></i></div></div>
+
+  <div class="foot">
+    <p>Clinical reference for the prescribing NP. Not a patient handout, and not a list the patient chooses from.</p>
+    <span class="stamp">Well Infused</span>
+  </div>
+</div></div></div></figure><figure><figcaption>Page 2 &middot; hormones and peptides</figcaption><div class="shot"><div class="sheet"><div class="pad">
+  <div class="mast">
+    <div class="lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="104.05 241.55 209.46 135.49" fill="currentColor"><path fill-rule="evenodd" d="M 292.269531 278.527344 C 293.089844 273.839844 297.554688 270.699219 302.242188 271.519531 C 306.929688 272.339844 310.066406 276.804688 309.25 281.492188 C 309.21875 281.675781 298.363281 345.234375 270.574219 345.234375 C 255.074219 345.234375 247.703125 325.148438 239.796875 303.589844 C 232.878906 284.734375 225.410156 264.378906 216.667969 264.378906 C 208.5625 264.378906 199.722656 292.253906 191.3125 318.769531 C 181.855469 348.59375 172.835938 377.039062 155.753906 377.039062 C 137.144531 377.039062 128.804688 345.695312 120.96875 316.246094 C 115.636719 296.214844 104.046875 260.0625 108.859375 260.0625 C 123.828125 260.0625 130.519531 285.207031 137.613281 311.863281 C 143.789062 335.082031 147.535156 359.785156 155.753906 359.785156 C 161.902344 359.71875 167.371094 337.230469 174.871094 313.585938 C 185.148438 281.183594 195.949219 247.128906 216.667969 247.128906 C 237.429688 247.128906 247.054688 273.359375 255.96875 297.660156 C 261.726562 313.359375 265.945312 327.980469 270.574219 327.980469 C 283.742188 327.980469 292.246094 278.664062 292.269531 278.527344"/><path fill-rule="evenodd" d="M 313.511719 250.328125 C 313.511719 245.480469 309.578125 241.550781 304.730469 241.550781 C 299.882812 241.550781 295.953125 245.480469 295.953125 250.328125 C 295.953125 255.179688 299.882812 259.109375 304.730469 259.109375 C 309.578125 259.109375 313.511719 255.179688 313.511719 250.328125"/></svg><div class="wm"><b>well</b><span>infused</span></div></div>
+    <div class="doc"><div class="eyebrow">Functional Fusion Protocol</div><h1>Formulary</h1></div>
+  </div><div class="mast-rule"></div>
+  <div class="kick"><span class="lab">Pathways &middot; hormones and peptides</span>
+    <span class="pg">2 of 4</span></div>
+  
+  <div class="sec"><h3 class="sech">Hormone Therapy &amp; Optimization</h3>
+    <span class="sub">Titrated to lab values, reassessed on schedule</span></div>
+  <div class="cats two"><div class="cat"><h4>Thyroid</h4><ul><li>NP Thyroid</li><li>Liothyronine</li></ul></div><div class="cat"><h4>Testosterone &amp; modulators</h4><ul><li>Testosterone Injection</li><li>Testosterone Cream or Troche</li><li>Enclomiphene</li><li>Anastrozole</li></ul></div><div class="cat"><h4>Estrogen &amp; progesterone</h4><ul><li>Estradiol Patch</li><li>Bi-Est Cream</li><li>Progesterone</li></ul></div><div class="cat"><h4>Hormone pellets</h4><ul><li class="tbd">Pellet types and strengths not yet supplied</li></ul></div></div>
+  <div class="rule"></div>
+  <div class="sec"><h3 class="sech">Peptides &amp; Compounds</h3>
+    <span class="sub">Grouped by what the panel indicates</span></div>
+  <div class="cats"><div class="cat"><h4>Weight &amp; athletic performance</h4><ul><li>Tirzepatide</li><li>CJC-1295 / Ipamorelin</li><li>Thymosin Beta 4</li></ul></div><div class="cat"><h4>Digestive health</h4><ul><li>BPC-157 + KPV</li><li>Vasoactive Intestinal Peptide</li></ul></div><div class="cat"><h4>Muscle, joint &amp; recovery</h4><ul><li>BPC-157</li><li>CJC-1295 / Ipamorelin</li><li>Thymosin Beta 4</li><li>Amlexanox</li></ul></div><div class="cat"><h4>Cognitive health</h4><ul><li>Synapsin</li><li>Methylene Blue</li><li>NAD+</li></ul></div><div class="cat"><h4>Sexual health</h4><ul><li>PT-141</li></ul></div><div class="cat"><h4>Sleep</h4><ul><li>Delta Sleep</li></ul></div><div class="cat"><h4>Immune strength</h4><ul><li>BPC-157</li><li>Thymosin Beta 4</li></ul></div><div class="cat"><h4>Anti-aging &amp; cosmetic</h4><ul><li>NAD+</li><li>GHK-Cu</li></ul></div></div>
+  <div class="write"><span class="lab">Other &middot; not listed above</span><div class="lines"><i></i><i></i><i></i></div></div>
+
+  <div class="foot">
+    <p>Clinical reference for the prescribing NP. Not a patient handout, and not a list the patient chooses from.</p>
+    <span class="stamp">Well Infused</span>
+  </div>
+</div></div></div></figure><figure><figcaption>Page 3 &middot; infusions and procedures</figcaption><div class="shot"><div class="sheet"><div class="pad">
+  <div class="mast">
+    <div class="lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="104.05 241.55 209.46 135.49" fill="currentColor"><path fill-rule="evenodd" d="M 292.269531 278.527344 C 293.089844 273.839844 297.554688 270.699219 302.242188 271.519531 C 306.929688 272.339844 310.066406 276.804688 309.25 281.492188 C 309.21875 281.675781 298.363281 345.234375 270.574219 345.234375 C 255.074219 345.234375 247.703125 325.148438 239.796875 303.589844 C 232.878906 284.734375 225.410156 264.378906 216.667969 264.378906 C 208.5625 264.378906 199.722656 292.253906 191.3125 318.769531 C 181.855469 348.59375 172.835938 377.039062 155.753906 377.039062 C 137.144531 377.039062 128.804688 345.695312 120.96875 316.246094 C 115.636719 296.214844 104.046875 260.0625 108.859375 260.0625 C 123.828125 260.0625 130.519531 285.207031 137.613281 311.863281 C 143.789062 335.082031 147.535156 359.785156 155.753906 359.785156 C 161.902344 359.71875 167.371094 337.230469 174.871094 313.585938 C 185.148438 281.183594 195.949219 247.128906 216.667969 247.128906 C 237.429688 247.128906 247.054688 273.359375 255.96875 297.660156 C 261.726562 313.359375 265.945312 327.980469 270.574219 327.980469 C 283.742188 327.980469 292.246094 278.664062 292.269531 278.527344"/><path fill-rule="evenodd" d="M 313.511719 250.328125 C 313.511719 245.480469 309.578125 241.550781 304.730469 241.550781 C 299.882812 241.550781 295.953125 245.480469 295.953125 250.328125 C 295.953125 255.179688 299.882812 259.109375 304.730469 259.109375 C 309.578125 259.109375 313.511719 255.179688 313.511719 250.328125"/></svg><div class="wm"><b>well</b><span>infused</span></div></div>
+    <div class="doc"><div class="eyebrow">Functional Fusion Protocol</div><h1>Formulary</h1></div>
+  </div><div class="mast-rule"></div>
+  <div class="kick"><span class="lab">Pathways &middot; infusions and procedures</span>
+    <span class="pg">3 of 4</span></div>
+  
+  <div class="sec"><h3 class="sech">IV Therapy</h3>
+    <span class="sub">Single-session infusions</span></div>
+  <div class="nlist"><div class="nrow"><div class="nm">The Well Infused</div><div class="ds">General energy, focus, immune strength.</div></div><div class="nrow"><div class="nm">Bug Killer</div><div class="ds">Active illness, fast recovery.</div></div><div class="nrow"><div class="nm">Gut Punch</div><div class="ds">Skin, digestion, Crohn&rsquo;s, IBS, colitis.</div></div><div class="nrow"><div class="nm">Headspace</div><div class="ds">Headaches, migraines, mental focus.</div></div><div class="nrow"><div class="nm">Inbound (Jet Setter)</div><div class="ds">Jet lag, dehydration, travel fatigue.</div></div><div class="nrow"><div class="nm">Juice Boost</div><div class="ds">Our Myer&rsquo;s Cocktail. Immune support.</div></div><div class="nrow"><div class="nm">Outbound (Jet Setter)</div><div class="ds">Pre-travel immune and hydration prep.</div></div><div class="nrow"><div class="nm">Performance</div><div class="ds">Athletic recovery and competition prep.</div></div><div class="nrow"><div class="nm">Post Viral</div><div class="ds">Lingering post-viral immune support.</div></div><div class="nrow"><div class="nm">Vanity</div><div class="ds">Hair, skin and nails. Esthetic procedure days.</div></div></div>
+  <div class="tint">
+    <span class="lab">Therapeutic protocols &middot; lab-driven, multi-week</span>
+    <p class="series">3-Series &nbsp;weeks 1 &middot; 2 &middot; 4 &nbsp;&nbsp;|&nbsp;&nbsp; 6-Series &nbsp;weeks 1 &middot; 2 &middot; 4 &middot; 6 &middot; 8 &middot; 10</p>
+    <div class="nlist"><div class="nrow"><div class="nm">Allergy IV</div><div class="ds">Seasonal, chronic or environmental allergy symptoms.</div></div><div class="nrow"><div class="nm">Functional Fusion&trade;</div><div class="ds">Curated to lab biomarkers out of range.</div></div><div class="nrow"><div class="nm">Pain and Neuropathy</div><div class="ds">Pain, neuropathy, systemic and joint inflammation.</div></div><div class="nrow"><div class="nm">Ozone</div><div class="ds">Routes and course under Ozone Therapy below.</div></div></div>
+  </div>
+  <div class="cols2">
+    <div>
+      <div class="sec"><h3 class="sech">Vitamin Injections</h3></div>
+      <div class="nlist"><div class="nrow"><div class="nm">Vitamin B12</div><div class="ds">Energy without stimulants.</div></div><div class="nrow"><div class="nm">Lipostat / Metabolism Boost</div><div class="ds">Accelerates fat breakdown.</div></div><div class="nrow"><div class="nm">Vitamin D3</div><div class="ds">Common immune-system deficiency.</div></div><div class="nrow"><div class="nm">NAD+</div><div class="ds">Cellular energy, mood, clarity.</div></div></div>
+      <div class="sec"><h3 class="sech">Salt Room</h3></div>
+      <div class="nlist"><div class="nrow"><div class="nm">Salt Room Therapy</div><div class="ds">30-minute session.</div></div><div class="nrow tbd-row"><div class="nm">Session packages</div><div class="ds">Package sizes and membership inclusion not yet supplied.</div></div></div>
+    </div>
+    <div>
+      <div class="sec"><h3 class="sech">Ozone Therapy</h3></div>
+      <div class="nlist"><div class="nrow"><div class="nm">Ozone + UBI &mdash; IV (O3UV)</div><div class="ds">Blood mixed with ozone and saline, passed through UV light, returned by IV.</div></div><div class="nrow"><div class="nm">Ozone Insufflation</div><div class="ds">Localized O3 delivery. Nasal, aural, rectal, vaginal.</div></div></div>
+      <div class="sec"><h3 class="sech">Regenerative Medicine</h3></div>
+      <div class="nlist"><div class="nrow"><div class="nm">Platelet Rich Plasma (PRP)</div><div class="ds">Patient&rsquo;s own cells for damaged joints, muscles, tendons, ligaments.</div></div><div class="nrow"><div class="nm">HUCT Cells</div><div class="ds">Systemic concerns beyond orthopedic. Heart, brain, lung, autoimmune.</div></div><div class="nrow"><div class="nm">A2M (Alpha-2-Macroglobulin)</div><div class="ds">Neutralizes the enzymes behind cartilage breakdown.</div></div></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <p>Clinical reference for the prescribing NP. Not a patient handout, and not a list the patient chooses from.</p>
+    <span class="stamp">Well Infused</span>
+  </div>
+</div></div></div></figure><figure><figcaption>Page 4 &middot; memberships and open items</figcaption><div class="shot"><div class="sheet"><div class="pad">
+  <div class="mast">
+    <div class="lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="104.05 241.55 209.46 135.49" fill="currentColor"><path fill-rule="evenodd" d="M 292.269531 278.527344 C 293.089844 273.839844 297.554688 270.699219 302.242188 271.519531 C 306.929688 272.339844 310.066406 276.804688 309.25 281.492188 C 309.21875 281.675781 298.363281 345.234375 270.574219 345.234375 C 255.074219 345.234375 247.703125 325.148438 239.796875 303.589844 C 232.878906 284.734375 225.410156 264.378906 216.667969 264.378906 C 208.5625 264.378906 199.722656 292.253906 191.3125 318.769531 C 181.855469 348.59375 172.835938 377.039062 155.753906 377.039062 C 137.144531 377.039062 128.804688 345.695312 120.96875 316.246094 C 115.636719 296.214844 104.046875 260.0625 108.859375 260.0625 C 123.828125 260.0625 130.519531 285.207031 137.613281 311.863281 C 143.789062 335.082031 147.535156 359.785156 155.753906 359.785156 C 161.902344 359.71875 167.371094 337.230469 174.871094 313.585938 C 185.148438 281.183594 195.949219 247.128906 216.667969 247.128906 C 237.429688 247.128906 247.054688 273.359375 255.96875 297.660156 C 261.726562 313.359375 265.945312 327.980469 270.574219 327.980469 C 283.742188 327.980469 292.246094 278.664062 292.269531 278.527344"/><path fill-rule="evenodd" d="M 313.511719 250.328125 C 313.511719 245.480469 309.578125 241.550781 304.730469 241.550781 C 299.882812 241.550781 295.953125 245.480469 295.953125 250.328125 C 295.953125 255.179688 299.882812 259.109375 304.730469 259.109375 C 309.578125 259.109375 313.511719 255.179688 313.511719 250.328125"/></svg><div class="wm"><b>well</b><span>infused</span></div></div>
+    <div class="doc"><div class="eyebrow">Functional Fusion Protocol</div><h1>Formulary</h1></div>
+  </div><div class="mast-rule"></div>
+  <div class="kick"><span class="lab">Memberships, packages and open items</span>
+    <span class="pg">4 of 4</span></div>
+  
+  <div class="sec"><h3 class="sech">Memberships</h3>
+    <span class="sub">As listed on the current pad</span></div>
+  <div class="nlist"><div class="price"><div><span class="pn">Foundation</span></div><span class="pv">$49</span></div><div class="price"><div><span class="pn">Comprehensive</span></div><span class="pv">$195</span></div><div class="price"><div><span class="pn">Comprehensive + Pellet Hormones</span></div><span class="pv">$295</span></div><div class="price"><div><span class="pn">Reserve</span></div><span class="pv">$849</span></div></div>
+  <div class="note"><span class="lab">Confirm before this is used</span>
+    <p>Billing period is not stated on the current pad. Foundation at $49 against Reserve at $849
+    suggests these are not all the same interval. Confirm which are monthly, and whether pricing
+    belongs on a clinical document at all.</p></div>
+  <div class="cols2">
+    <div>
+      <div class="sec"><h3 class="sech">Packages</h3></div>
+      <div class="nlist"><div class="price"><div><span class="pn">Vitamin Shot</span><span class="pd"> &nbsp;5 sessions</span></div><span class="pv">$110</span></div><div class="price"><div><span class="pn">IV Therapy</span><span class="pd"> &nbsp;3 sessions</span></div><span class="pv">$580</span></div><div class="price"><div><span class="pn">IV Therapy</span><span class="pd"> &nbsp;6 sessions</span></div><span class="pv">$1095</span></div><div class="price"><div><span class="pn">Ozone Therapy</span><span class="pd"> &nbsp;3 sessions</span></div><span class="pv">$700</span></div><div class="price"><div><span class="pn">Ozone Therapy</span><span class="pd"> &nbsp;6 sessions</span></div><span class="pv">$1300</span></div><div class="price"><div><span class="pn">NAD+</span><span class="pd"> &nbsp;6 sessions</span></div><span class="pv">$220</span></div></div>
+    </div>
+    <div>
+      <div class="sec"><h3 class="sech">Next Appointments</h3></div>
+      <div class="nlist"><div class="nrow"><div class="nm">InBody</div><div class="ds">Body composition scan.</div></div><div class="nrow"><div class="nm">IV Therapy</div><div class="ds">Date and series set at order.</div></div><div class="nrow"><div class="nm">Lab Panel</div><div class="ds">Repeat panel at reassessment.</div></div><div class="nrow"><div class="nm">Follow-Up Call</div><div class="ds">Between-visit check-in.</div></div><div class="nrow"><div class="nm">Regenerative Therapy Consult</div><div class="ds">Separate consultation.</div></div></div>
+    </div>
+  </div>
+  <div class="sec"><h3 class="sech">Still to be supplied</h3>
+    <span class="sub">Placeholders, not omissions</span></div>
+  <div class="nlist"><div class="nrow tbd-row"><div class="nm">Hormone pellet products</div><div class="ds">Types, strengths and re-pellet interval.</div></div><div class="nrow tbd-row"><div class="nm">IV dosing detail</div><div class="ds">Any internal-only IVs or dosing not published on the site.</div></div><div class="nrow tbd-row"><div class="nm">Peptide dosing</div><div class="ds">Strengths and titration schedules per compound.</div></div><div class="nrow tbd-row"><div class="nm">Supplement dosing</div><div class="ds">Dose and duration per product, and brand where it matters.</div></div><div class="nrow tbd-row"><div class="nm">Ozone course lengths</div><div class="ds">Sessions per course by route.</div></div><div class="nrow tbd-row"><div class="nm">Regenerative pricing</div><div class="ds">PRP, HUCT and A2M, plus which joints are in scope.</div></div></div>
+  <div class="sec"><h3 class="sech">Not in this protocol</h3>
+    <span class="sub">Phase 2 per the handoff</span></div>
+  <div class="nlist"><div class="nrow tbd-row"><div class="nm">Weight Loss &amp; Body Composition</div><div class="ds">Live on the website. Tabled in the handoff.</div></div><div class="nrow tbd-row"><div class="nm">Joint &amp; Muscle Therapy</div><div class="ds">Live on the website, incl. trigger point injections. Tabled.</div></div><div class="nrow tbd-row"><div class="nm">Breast Thermography</div><div class="ds">Live on the website. Tabled.</div></div></div>
+
+  <div class="foot">
+    <p>Clinical reference for the prescribing NP. Not a patient handout, and not a list the patient chooses from.</p>
+    <span class="stamp">Well Infused</span>
+  </div>
+</div></div></div></figure></div>
+</section>
+
 <div class="flags">
-  <h3>Before this gets built out</h3>
-  <p class="sub">Four things worth deciding once, rather than four times.</p>
+  <h3>Open before anything prints</h3>
+  <p class="sub">Carried forward, plus what the formulary surfaced.</p>
   <ul>
-    <li><b>Dana's existing pad is much bigger than this brief.</b> It also carries a supplement formulary of roughly 34 named products across eight categories, a pharmacy and peptide list, membership and package pricing, and a Next Appointments block. None of that is in these three concepts, because the handoff did not mention it. Whichever concept wins will need a second page or a reverse side to hold it, and that is a structural decision, not a styling one.</li>
-    <li><b>Pricing on a clinical order.</b> The old pad puts dollar figures next to memberships and packages on the same sheet as the prescription. If the new model is a clinical determination rather than a menu, price probably belongs on a separate sheet. Worth confirming before the layout is locked.</li>
-    <li><b>Naming collision.</b> "Functional Fusion" is already live on wellinfused.com as a specific lab-driven IV protocol, the 3-Series and 6-Series. Here it is also the name of the entire framework, and the IV Therapy row is exactly where an NP would write "FF 6-Series." The collision shows up on a single sheet. This needs either the site or the framework renamed, and I have not quietly resolved it.</li>
-    <li><b>Logo files.</b> The wave mark here was rebuilt as clean vector from the brand PDF, so it is sharp at any size, but the wordmark is set in live Avenir rather than the original artwork. Request the vector files from the brand owner before a print run.</li>
+    <li><b>Naming collision.</b> &ldquo;Functional Fusion&rdquo; is live on wellinfused.com as a
+    specific lab-driven IV protocol, the 3-Series and 6-Series, and is also the name of the whole
+    framework. Both appear in this formulary, on page 3, a few lines apart. One of them needs to change.</li>
+    <li><b>Pricing on a clinical document.</b> Membership and package pricing is on page 4 because it
+    is on the current pad. Billing period is not stated there: Foundation at $49 against Reserve at
+    $849 cannot be the same interval. Confirm the intervals, and confirm price belongs here at all.</li>
+    <li><b>Duplicate entries.</b> BPC-157 is a supplement on the current pad (GI Stack, and with
+    TB-500) and a peptide on the website. Confirm which list owns it.</li>
+    <li><b>Three live services are excluded.</b> Weight Loss &amp; Body Composition, Joint &amp;
+    Muscle Therapy and Breast Thermography are all on the website but were tabled in the handoff.
+    They are listed on page 4 under &ldquo;Not in this protocol&rdquo; so the omission is deliberate
+    and visible. Confirm they stay out.</li>
+    <li><b>Logo files.</b> The wave mark was rebuilt as clean vector from the brand PDF, but the
+    wordmark is set in live Avenir. Request the vector files before a print run.</li>
   </ul>
 </div>
 </div>
