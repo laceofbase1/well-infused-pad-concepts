@@ -56,17 +56,19 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
 .px-head h2{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--ink)}
 .px-head p{font-size:6.5pt;letter-spacing:.16em;text-transform:uppercase;color:var(--stone-400);font-weight:500}
 .px-rule{height:1pt;background:var(--ink)}
-.px-cols{display:grid;grid-template-columns:54pt 1.05fr 1fr 78pt;gap:14pt;padding:5pt 0 6pt;border-bottom:.5pt solid var(--hair)}
+.px-cols{display:grid;grid-template-columns:54pt 1.05fr 1fr 78pt;gap:14pt;padding:5pt 0 6pt;border-bottom:.5pt solid var(--rule)}
 .px-cols .c{text-align:center}
 .px-cols .lab{color:#8E8A81}
 
 .row{display:grid;grid-template-columns:54pt 1.05fr 1fr 78pt;gap:14pt;padding:8pt 0 7pt;
-  border-bottom:.5pt solid var(--hair);align-items:start}
+  border-bottom:.5pt solid var(--rule);align-items:start}
 .ring{display:block;width:10pt;height:10pt;border-radius:50%;border:1pt solid var(--rule);background:var(--paper);margin:1.5pt auto 0}
 .ring.on{background:var(--green);border-color:var(--green)}
 .row h3{font-size:10pt;font-weight:600;letter-spacing:-.01em;color:var(--ink);line-height:1.15}
 .row .desc{font-size:7pt;font-weight:400;color:var(--stone-400);margin-top:2pt;line-height:1.3}
-.row .slot{border-bottom:.5pt solid var(--rule);height:16pt;display:flex;align-items:flex-end;padding-bottom:2.5pt;align-self:end}
+/* Variant 3 (Lacey, 19 Oct 2026): one line per row; the row's own bottom rule is the line to write on.
+   The slot keeps a transparent rule so its height, and the sheet's fit, do not change. */
+.row .slot{border-bottom:.5pt solid transparent;height:16pt;display:flex;align-items:flex-end;padding-bottom:2.5pt;align-self:end}
 
 /* ── sign-off ── */
 .close{margin-top:auto;padding-top:14pt}
@@ -109,7 +111,7 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
   <div class="who"><div><span class="lab">Patient</span><div class="slot"></div></div><div><span class="lab">Date of birth</span><div class="slot"></div></div><div><span class="lab">Visit date</span><div class="slot"></div></div><div><span class="lab">Prescribing NP</span><div class="slot"></div></div></div>
   <div class="found">
     <div class="found-top"><h2>The Foundation</h2><p>Prescribed at intake · not variable</p></div>
-    <div class="f-item"><span class="disc"></span><div><h3>Foundational Labs</h3>
+    <div class="f-item"><span class="disc"></span><div><h3>Functional Labs</h3>
       <p>Drawn before anything is prescribed, and repeated at reassessment to measure change.</p></div></div>
     <div class="f-item"><span class="disc"></span><div><h3>Nutritional Foundation &amp; Supplements</h3>
       <p>Formulated to your lab results. Not to a catalog, and not to your symptoms.</p></div></div>
@@ -154,7 +156,7 @@ body{background:#7E7C76;font-family:var(--sans);-webkit-font-smoothing:antialias
   <div class="who"><div><span class="lab">Patient</span><div class="slot"><span class="ink">Jane R. Doe</span></div></div><div><span class="lab">Date of birth</span><div class="slot"><span class="ink">04·17·78</span></div></div><div><span class="lab">Visit date</span><div class="slot"><span class="ink">21·08·26</span></div></div><div><span class="lab">Prescribing NP</span><div class="slot"><span class="ink">E. Del Giudice</span></div></div></div>
   <div class="found">
     <div class="found-top"><h2>The Foundation</h2><p>Prescribed at intake · not variable</p></div>
-    <div class="f-item"><span class="disc"></span><div><h3>Foundational Labs</h3>
+    <div class="f-item"><span class="disc"></span><div><h3>Functional Labs</h3>
       <p>Drawn before anything is prescribed, and repeated at reassessment to measure change.</p></div></div>
     <div class="f-item"><span class="disc"></span><div><h3>Nutritional Foundation &amp; Supplements</h3>
       <p>Formulated to your lab results. Not to a catalog, and not to your symptoms.</p></div></div>
